@@ -1,0 +1,145 @@
+[
+{
+"sub": "Doogee",
+"name": "Doogee A9 Agile",
+"detail": "10.1\" · 3GB+64GB · Wi-Fi",
+"color": "Gris",
+"note": "",
+"cod": "1636215",
+"pricing": "tab",
+"v": 90.0,
+"img": "src/doogee/1636215.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee A9 Agile VIP Edition",
+"detail": "10.1\" · 3GB+64GB · Wi-Fi",
+"color": "Azul",
+"note": "Incluye funda y kit",
+"cod": "1591156",
+"pricing": "tab",
+"v": 110.0,
+"img": "src/doogee/1591156.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee A9 Agile VIP Edition",
+"detail": "10.1\" · 3GB+64GB · Wi-Fi",
+"color": "Gris",
+"note": "Incluye funda y kit",
+"cod": "1591163",
+"pricing": "tab",
+"v": 110.0,
+"img": "src/doogee/1591163.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee A9 Agile VIP Edition",
+"detail": "10.1\" · 3GB+64GB · Wi-Fi",
+"color": "Negro",
+"note": "Incluye funda y kit",
+"cod": "1591170",
+"pricing": "tab",
+"v": 110.0,
+"img": "src/doogee/1591170.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee E3 Max Enjoy",
+"detail": "14\" · 8GB+256GB · 4G con chip · Wi-Fi",
+"color": "Azul",
+"note": "",
+"cod": "1659290",
+"pricing": "tab",
+"v": 250.0,
+"img": "src/doogee/1659290.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee E3 Max Enjoy",
+"detail": "14\" · 8GB+256GB · 4G con chip · Wi-Fi",
+"color": "Gris",
+"note": "",
+"cod": "1659306",
+"pricing": "tab",
+"v": 235.0,
+"img": "src/doogee/1659306.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee E3 Max Enjoy",
+"detail": "14\" · 8GB+256GB · 4G con chip · Wi-Fi",
+"color": "Negro",
+"note": "",
+"cod": "1659313",
+"pricing": "tab",
+"v": 235.0,
+"img": "src/doogee/1659313.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee G6 Max VIP Edition",
+"detail": "13.4\" · 6GB+256GB · 4G con chip · Wi-Fi",
+"color": "Gris",
+"note": "Incluye funda y kit",
+"cod": "1686524",
+"pricing": "tab",
+"v": 199.0,
+"img": "src/doogee/1686524.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee T10W",
+"detail": "10.1\" · 4GB+128GB · 4G con chip · Wi-Fi",
+"color": "Azul",
+"note": "",
+"cod": "1573459",
+"pricing": "tab",
+"v": 105.0,
+"img": "src/doogee/1573459.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee T10W",
+"detail": "10.1\" · 4GB+128GB · 4G con chip · Wi-Fi",
+"color": "Negro",
+"note": "",
+"cod": "1506549",
+"pricing": "tab",
+"v": 105.0,
+"img": "src/doogee/1506549.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee T10W",
+"detail": "10.1\" · 4GB+128GB · 4G con chip · Wi-Fi",
+"color": "Azul",
+"note": "Incluye funda y kit",
+"cod": "1601671",
+"pricing": "tab",
+"v": 110.0,
+"img": "src/doogee/1601671.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee T10W",
+"detail": "10.1\" · 4GB+128GB · 4G con chip · Wi-Fi",
+"color": "Negro",
+"note": "Incluye funda y kit",
+"cod": "1601688",
+"pricing": "tab",
+"v": 110.0,
+"img": "src/doogee/1601688.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee T35",
+"detail": "11\" · 8GB+256GB · 4G con chip · Wi-Fi",
+"color": "Azul",
+"note": "Incluye funda transparente y kit",
+"cod": "1659344",
+"pricing": "tab",
+"v": 205.0,
+"img": "src/doogee/1659344.jpeg"
+}
+]

@@ -1,0 +1,68 @@
+[
+{
+"sub": "Ulefone",
+"name": "Ulefone Armor Pad 2",
+"detail": "11.0\" · 8GB+256GB · 4G con chip · Wi-Fi",
+"color": "Negro",
+"note": "",
+"cod": "1661644",
+"pricing": "tab",
+"v": 269.0,
+"img": "src/ulefone/1661644.jpeg"
+},
+{
+"sub": "Ulefone",
+"name": "Ulefone Armor Pad 3 Pro",
+"detail": "10.36\" · 8GB+256GB · 4G con chip · Wi-Fi",
+"color": "Negro",
+"note": "",
+"cod": "1661651",
+"pricing": "tab",
+"v": 289.0,
+"img": "src/ulefone/1661651.jpeg"
+},
+{
+"sub": "Ulefone",
+"name": "Ulefone Armor Pad Pro",
+"detail": "8.0\" · 8GB+128GB · 4G con chip · Wi-Fi",
+"color": "Negro",
+"note": "",
+"cod": "1661668",
+"pricing": "tab",
+"v": 190.0,
+"img": "src/ulefone/1661668.jpeg"
+},
+{
+"sub": "Ulefone",
+"name": "Ulefone Tab A9 Pro",
+"detail": "8.68\" · 4GB+128GB · 4G con chip · Wi-Fi",
+"color": "Azul y plateado",
+"note": "Incluye funda",
+"cod": "1661620",
+"pricing": "tab",
+"v": 125.0,
+"img": "src/ulefone/1661620.jpeg"
+},
+{
+"sub": "Ulefone",
+"name": "Ulefone Tab A9 Pro",
+"detail": "8.68\" · 4GB+128GB · 4G con chip · Wi-Fi",
+"color": "Blanco y plateado",
+"note": "Incluye funda",
+"cod": "1661613",
+"pricing": "tab",
+"v": 125.0,
+"img": "src/ulefone/1661613.jpeg"
+},
+{
+"sub": "Ulefone",
+"name": "Ulefone Tab A12 Pro",
+"detail": "12.2\" · 8GB+128GB · 4G con chip · Wi-Fi",
+"color": "Gris",
+"note": "Incluye funda",
+"cod": "1661606",
+"pricing": "tab",
+"v": 207.0,
+"img": "src/ulefone/1661606.jpeg"
+}
+]

@@ -1,0 +1,765 @@
+[
+{
+"name": "IPAD 11 (A16) MD3Y4 WIFI (2025) 128GB 11\" 12MP/12MP SILVER",
+"ref": "SILVER",
+"cod": "1466621",
+"usd": 455.0,
+"img": "src/tab/1466621.jpeg"
+},
+{
+"name": "IPAD 11 (A16) MD4A4 WIFI (2025) 128GB 11\" 12MP/12MP AZUL",
+"ref": "BLUE",
+"cod": "1466638",
+"usd": 448.0,
+"img": "src/tab/1466638.jpeg"
+},
+{
+"name": "IPAD 11 (A16) MD4E4 WIFI (2025) 128GB 11\" 12MP/12MP ROSA",
+"ref": "PINK",
+"cod": "1466652",
+"usd": 448.0,
+"img": "src/tab/1466652.jpeg"
+},
+{
+"name": "IPAD 11 (A16) MD4H4 WIFI (2025) 256GB 11\" 12MP/12MP (S/LACRE) AZUL",
+"ref": "BLUE",
+"cod": "1565751",
+"usd": 550.0,
+"img": "src/tab/1565751.jpeg"
+},
+{
+"name": "IPAD AIR MCNP4 WIFI (2025) M3 256GB 13\" 12MP/12MP AZUL",
+"ref": "BLUE",
+"cod": "1466874",
+"usd": 895.0,
+"img": "src/tab/1466874.jpeg"
+},
+{
+"name": "IPAD AIR MH304 WIFI (2026) M4 128GB 11\" 12MP/12MP CINZA",
+"ref": "SPACE GRAY",
+"cod": "1597738",
+"usd": 745.0,
+"img": "src/tab/1597738.jpeg"
+},
+{
+"name": "IPAD AIR MH304 WIFI (2026) M4 128GB 11\" 12MP/12MP(S/LACRE)CX FEIA",
+"ref": "SPACE GRAY",
+"cod": "1679649",
+"usd": 735.0,
+"img": "src/tab/1679649.jpeg"
+},
+{
+"name": "IPAD AIR MH314 WIFI (2026) M4 128GB 11\" 12MP/12MP AZUL",
+"ref": "BLUE",
+"cod": "1597752",
+"usd": 745.0,
+"img": "src/tab/1597752.jpeg"
+},
+{
+"name": "IPAD AIR MH314 WIFI (2026) M4 128GB 11\" 12MP/12MP (S/LACRE) AZUL",
+"ref": "BLUE",
+"cod": "1679656",
+"usd": 735.0,
+"img": "src/tab/1679656.jpeg"
+},
+{
+"name": "IPAD AIR MH334 WIFI (2026) M4 128GB 11\" 12MP/12MP DOURADO",
+"ref": "STARLIGHT",
+"cod": "1597769",
+"usd": 745.0,
+"img": "src/tab/1597769.jpeg"
+},
+{
+"name": "IPAD AIR MH344 WIFI (2026) M4 128GB 11\" 12MP/12MP ROXO",
+"ref": "PURPLE",
+"cod": "1597776",
+"usd": 744.0,
+"img": "src/tab/1597776.jpeg"
+},
+{
+"name": "IPAD AIR MH374 WIFI (2026) M4 256GB 11\" 12MP/12MP DOURADO",
+"ref": "STARLIGHT",
+"cod": "1597806",
+"usd": 845.0,
+"img": "src/tab/1597806.jpeg"
+},
+{
+"name": "IPAD AIR MH5N4 WIFI (2026) M4 128GB 13\" 12MP/12MP CINZA",
+"ref": "SPACE GRAY",
+"cod": "1597868",
+"usd": 945.0,
+"img": "src/tab/1597868.jpeg"
+},
+{
+"name": "IPAD AIR MH5P4 WIFI (2026) M4 128GB 13\" 12MP/12MP AZUL",
+"ref": "BLUE",
+"cod": "1597875",
+"usd": 960.0,
+"img": "src/tab/1597875.jpeg"
+},
+{
+"name": "IPAD AIR MH5Q4 WIFI (2026) M4 128GB 13\" 12MP/12MP DOURADO",
+"ref": "STARLIGHT",
+"cod": "1597882",
+"usd": 950.0,
+"img": "src/tab/1597882.jpeg"
+},
+{
+"name": "IPAD AIR MH5Q4 WIFI (2026) M4 128GB 13\" 12MP/12MP(S/LACRE)DOURADO",
+"ref": "STARLIGHT",
+"cod": "1688641",
+"usd": 950.0,
+"img": "src/tab/1688641.jpeg"
+},
+{
+"name": "IPAD AIR MH5T4 WIFI (2026) M4 128GB 13\" 12MP/12MP ROXO",
+"ref": "PURPLE",
+"cod": "1597899",
+"usd": 940.0,
+"img": "src/tab/1597899.jpeg"
+},
+{
+"name": "IPAD AIR MH5U4 WIFI (2026) M4 256GB 13\" 12MP/12MP CINZA",
+"ref": "SPACE GRAY",
+"cod": "1597905",
+"usd": 1050.0,
+"img": "src/tab/1597905.jpeg"
+},
+{
+"name": "IPAD AIR MH5V4 WIFI (2026) M4 256GB 13\" 12MP/12MP AZUL",
+"ref": "BLUE",
+"cod": "1597912",
+"usd": 1050.0,
+"img": "src/tab/1597912.jpeg"
+},
+{
+"name": "IPAD AIR MH784 WIFI (2026) M4 128GB 11\" CELULAR 12MP/12MP CINZA",
+"ref": "SPACE GRAY",
+"cod": "1597981",
+"usd": 899.0,
+"img": "src/tab/1597981.jpeg"
+},
+{
+"name": "IPAD AIR MH794 WIFI (2026) M4 128GB 11\" CELULAR 12MP/12MP AZUL",
+"ref": "BLUE",
+"cod": "1597998",
+"usd": 899.0,
+"img": "src/tab/1597998.jpeg"
+},
+{
+"name": "IPAD AIR MH7A4 WIFI (2026) M4 128GB 11\" CEL 12MP/12MP(S/LACRE) DOURADO",
+"ref": "STARLIGHT",
+"cod": "1639612",
+"usd": 899.0,
+"img": "src/tab/1639612.jpeg"
+},
+{
+"name": "IPAD AIR MH7C4 WIFI (2026) M4 128GB 11\" 12MP/12MP CELULAR ROXO",
+"ref": "PURPLE",
+"cod": "1598018",
+"usd": 899.0,
+"img": "src/tab/1598018.jpeg"
+},
+{
+"name": "IPAD AIR MH7D4 WIFI (2026) M4 256GB 11\" CELULAR 12MP/12MP CINZA",
+"ref": "SPACE GRAY",
+"cod": "1598025",
+"usd": 1020.0,
+"img": "src/tab/1598025.jpeg"
+},
+{
+"name": "IPAD PRO MDWK4 WIFI (2025) M5 256GB 11\" 12MP/12MP PRETO",
+"ref": "SPACE BLACK",
+"cod": "1540901",
+"usd": 1129.0,
+"img": "src/tab/1540901.jpeg"
+},
+{
+"name": "IPAD PRO MDYK4 WIFI (2025) M5 256GB 13\" 12MP/12MP SILVER",
+"ref": "SILVER",
+"cod": "1540833",
+"usd": 1470.0,
+"img": "src/tab/1540833.jpeg"
+},
+{
+"name": "TABLET BLACK SHARK BSG1 GAMING 8.8\" 12GB+256GB WIFI CINZA +CAPA PRETO",
+"ref": "SILVER",
+"cod": "1571264",
+"usd": 349.0,
+"img": "src/tab/1571264.jpeg"
+},
+{
+"name": "TABLET BLACK SHARK BSG1 GAMING 8.8\" 12GB+256GB WIFI PRETO +CAPA PRETO",
+"ref": "BLACK",
+"cod": "1571240",
+"usd": 349.0,
+"img": "src/tab/1571240.jpeg"
+},
+{
+"name": "TABLET BLACK SHARK PAD 7 BSM1 DUAL 11\" 6GB+128GB LTE AZUL",
+"ref": "BLUE",
+"cod": "1591521",
+"usd": 149.75,
+"img": "src/tab/1591521.jpeg"
+},
+{
+"name": "TABLET BLACK SHARK PAD 7 BSM1 DUAL 11\" 6GB+128GB LTE CINZA",
+"ref": "GRAY",
+"cod": "1591514",
+"usd": 149.0,
+"img": "src/tab/1591514.jpeg"
+},
+{
+"name": "TABLET BLACK SHARK PAD SE BSM2 DUAL 10.1\" 4GB+128GB LTE AZUL+CAPA CINZ",
+"ref": "BLUE",
+"cod": "1608762",
+"usd": 115.0,
+"img": "src/tab/1608762.jpeg"
+},
+{
+"name": "TABLET BLACK SHARK PAD SE BSM2 DUAL 10.1\" 4GB+128GB LTE PRETO+CAPA CIN",
+"ref": "BLACK",
+"cod": "1585346",
+"usd": 115.0,
+"img": "src/tab/1585346.jpeg"
+},
+{
+"name": "TABLET BLACKVIEW ACTIVE 10 PRO DUAL 10.95\" 12GB+256GB 5G PRETO",
+"ref": "BLACK",
+"cod": "1459678",
+"usd": 360.0,
+"img": "src/tab/1459678.jpeg"
+},
+{
+"name": "TABLET BLACKVIEW ACTIVE 10 PRO DUAL 10.95\" 12GB+256GB 5G PRETO/LARANJA",
+"ref": "ORANGE",
+"cod": "1459685",
+"usd": 360.0,
+"img": "src/tab/1459685.jpeg"
+},
+{
+"name": "TABLET BLACKVIEW ACTIVE 12 PRO DUAL 11\" 12GB+256GB 5G PRETO",
+"ref": "BLACK",
+"cod": "1554243",
+"usd": 485.0,
+"img": "src/tab/1554243.jpeg"
+},
+{
+"name": "TABLET BLACKVIEW LINK 1 KIDS 8.68\" 4GB+64GB WIFI ROXO",
+"ref": "DREAMY PURPLE",
+"cod": "1580983",
+"usd": 90.0,
+"img": "src/tab/1580983.jpeg"
+},
+{
+"name": "TABLET BLACKVIEW MEGA 5 DUAL 12.2\" 8GB+256GB LTE AZUL+CAPA PRETO +KIT",
+"ref": "ICE BLUE",
+"cod": "1632019",
+"usd": 225.0,
+"img": "src/tab/1632019.jpeg"
+},
+{
+"name": "TABLET BLACKVIEW TAB 20 10.1\" 4GB+64GB WIFI CINZA +CAPA CINZA",
+"ref": "INTERSTELL GREY",
+"cod": "1507751",
+"usd": 95.0,
+"img": "src/tab/1507751.jpeg"
+},
+{
+"name": "TABLET BLACKVIEW TAB 20 KIDS 10.1\" 4GB+64GB WIFI CINZA +CAPA AZUL",
+"ref": "BUBBLE BLUE",
+"cod": "1532357",
+"usd": 110.0,
+"img": "src/tab/1532357.jpeg"
+},
+{
+"name": "TABLET BLACKVIEW TAB 60 10.1\" 4GB+128GB WIFI AZUL +CAPA AZUL",
+"ref": "SUNNY SKY BLUE",
+"cod": "1459623",
+"usd": 115.0,
+"img": "src/tab/1459623.jpeg"
+},
+{
+"name": "TABLET BLACKVIEW TAB 60 10.1\" 4GB+128GB WIFI VERDE +CAPA VERDE",
+"ref": "ALGAE GREEN",
+"cod": "1459630",
+"usd": 115.0,
+"img": "src/tab/1459630.jpeg"
+},
+{
+"name": "TABLET BLACKVIEW TAB A6 KIDS 10.1\" 4GB+128GB WIFI CINZA +CAPA AZUL",
+"ref": "OCEAN BLUE",
+"cod": "1446906",
+"usd": 115.0,
+"img": "src/tab/1446906.jpeg"
+},
+{
+"name": "TABLET BLACKVIEW TAB A6 KIDS 10.1\" 4GB+128GB WIFI CINZA +CAPA ROSA",
+"ref": "ROSE PINK",
+"cod": "1446913",
+"usd": 115.0,
+"img": "src/tab/1446913.jpeg"
+},
+{
+"name": "TABLET DOOGEE A9 AGILE 10.1\" 3GB+64GB WIFI CINZA",
+"ref": "METEORITE GRAY",
+"cod": "1636215",
+"usd": 90.0,
+"img": "src/tab/1636215.jpeg"
+},
+{
+"name": "TABLET DOOGEE A9 VIP EDIT AGILE 10.1\" 3GB+64GB WIFI AZUL +CAP CIN+KIT",
+"ref": "GLACIER BLUE",
+"cod": "1591156",
+"usd": 110.0,
+"img": "src/tab/1591156.jpeg"
+},
+{
+"name": "TABLET DOOGEE A9 VIP EDIT AGILE 10.1\" 3GB+64GB WIFI CINZA +CAP CIN+KIT",
+"ref": "METEORITE GRAY",
+"cod": "1591163",
+"usd": 110.0,
+"img": "src/tab/1591163.jpeg"
+},
+{
+"name": "TABLET DOOGEE A9 VIP EDIT AGILE 10.1\" 3GB+64GB WIFI PRETO +CAP CIN+KIT",
+"ref": "AURORA BLACK",
+"cod": "1591170",
+"usd": 110.0,
+"img": "src/tab/1591170.jpeg"
+},
+{
+"name": "TABLET DOOGEE E3 MAX ENJOY DUAL 14\" 8GB+256GB LTE AZUL",
+"ref": "MIST BLUE",
+"cod": "1659290",
+"usd": 250.0,
+"img": "src/tab/1659290.jpeg"
+},
+{
+"name": "TABLET DOOGEE E3 MAX ENJOY DUAL 14\" 8GB+256GB LTE CINZA",
+"ref": "POLAR GARY",
+"cod": "1659306",
+"usd": 235.0,
+"img": "src/tab/1659306.jpeg"
+},
+{
+"name": "TABLET DOOGEE E3 MAX ENJOY DUAL 14\" 8GB+256GB LTE PRETO",
+"ref": "COSMOS BLACK",
+"cod": "1659313",
+"usd": 235.0,
+"img": "src/tab/1659313.jpeg"
+},
+{
+"name": "TABLET DOOGEE G6 MAX VIP EDITION DUAL 13.4\" 6GB+256GB LTE AZ+CAP CI+KT",
+"ref": "AQUAMARINE BLUE",
+"cod": "1661538",
+"usd": 199.0,
+"img": "src/tab/1661538.jpeg"
+},
+{
+"name": "TABLET DOOGEE G6 MAX VIP EDITION DUAL 13.4\" 6GB+256GB LTE CI+CAP CI+KT",
+"ref": "MISTY GRAY",
+"cod": "1686524",
+"usd": 199.0,
+"img": "src/tab/1686524.jpeg"
+},
+{
+"name": "TABLET DOOGEE T10W DUAL 10.1\" 4GB+128GB LTE AZUL",
+"ref": "ICE BLUE",
+"cod": "1573459",
+"usd": 105.0,
+"img": "src/tab/1573459.jpeg"
+},
+{
+"name": "TABLET DOOGEE T10W DUAL 10.1\" 4GB+128GB LTE PRETO",
+"ref": "CLASSIC BLACK",
+"cod": "1506549",
+"usd": 105.0,
+"img": "src/tab/1506549.jpeg"
+},
+{
+"name": "TABLET DOOGEE T10W(A) DUAL 10.1\" 4GB+128GB LTE AZUL +CAPA CINZA +KIT",
+"ref": "ICE BLUE",
+"cod": "1601671",
+"usd": 110.0,
+"img": "src/tab/1601671.jpeg"
+},
+{
+"name": "TABLET DOOGEE T10W(A) DUAL 10.1\" 4GB+128GB LTE PRETO +CAPA CINZA +KIT",
+"ref": "CLASSIC BLACK",
+"cod": "1601688",
+"usd": 110.0,
+"img": "src/tab/1601688.jpeg"
+},
+{
+"name": "TABLET DOOGEE T35 DUAL 11\" 8GB+256GB LTE AZUL +CAPA TRANSPARENT +KIT",
+"ref": "ICE BLUE",
+"cod": "1659344",
+"usd": 205.0,
+"img": "src/tab/1659344.jpeg"
+},
+{
+"name": "TABLET HOTWAV PAD 15 PRO DUAL 10.1\" 3GB+64GB ROXO +CAP CINZ+ KIT",
+"ref": "TWILIGHT PURPLR",
+"cod": "1683523",
+"usd": 105.0,
+"img": "src/tab/1683523.jpeg"
+},
+{
+"name": "TABLET HOTWAV PAD 15 PRO DUAL 10.1\" 3GB+64GB VERDE +CAP CINZ +KIT",
+"ref": "MISTY GREEN",
+"cod": "1683516",
+"usd": 105.0,
+"img": "src/tab/1683516.jpeg"
+},
+{
+"name": "TABLET HOTWAV PAD 17 PRO DUAL 10.1\" 3GB+64GB LARANJ +CAPA CIN+KIT",
+"ref": "VITALITY ORANGE",
+"cod": "1683493",
+"usd": 105.0,
+"img": "src/tab/1683493.jpeg"
+},
+{
+"name": "TABLET HOTWAV PAD 17 PRO DUAL 10.1\" 3GB+64GB PRETO +CAPA CIN+KIT",
+"ref": "OBSIDIAN BLACK",
+"cod": "1683509",
+"usd": 105.0,
+"img": "src/tab/1683509.jpeg"
+},
+{
+"name": "TABLET HOTWAV PAD 17 PRO DUAL 10.1\" 4GB+128GB LTE LARANJ +CAPA CIN+KIT",
+"ref": "VITALITY ORANGE",
+"cod": "1650730",
+"usd": 125.0,
+"img": "src/tab/1650730.jpeg"
+},
+{
+"name": "TABLET HOTWAV PAD 17 PRO DUAL 10.1\" 4GB+128GB LTE PRETO +CAPA CIN+KIT",
+"ref": "OBSIDIAN BLACK",
+"cod": "1650723",
+"usd": 125.0,
+"img": "src/tab/1650723.jpeg"
+},
+{
+"name": "TABLET IPRO SPEED5 DUAL 7.0\" 2GB+32GB LTE AMARELO/MARROM+OCULOS",
+"ref": "SPEED-5",
+"cod": "1295122",
+"usd": 41.0,
+"img": "src/tab/1295122.jpeg"
+},
+{
+"name": "TABLET IPRO TURBO1 DUAL 7.0\" 2GB+32GB LTE PRETO+OCULOS",
+"ref": "TURBO-I",
+"cod": "1344776",
+"usd": 43.0,
+"img": "src/tab/1344776.jpeg"
+},
+{
+"name": "TABLET MOX MO-TK138 KIDS 7.0\" 6GB+128GB WIFI BR/COL+CAPA AZ(KT VARIADO",
+"ref": "MO-TK138",
+"cod": "1665314",
+"usd": 50.0,
+"img": "src/tab/1665314.jpeg"
+},
+{
+"name": "TABLET MOX MO-TK138 KIDS 7.0\" 6GB+128GB WIFI BR/COL+CAPA RS(KT VARIADO",
+"ref": "MO-TK138",
+"cod": "1665338",
+"usd": 50.0,
+"img": "src/tab/1665338.jpeg"
+},
+{
+"name": "TABLET MOX MO-TP1082 DUAL 10.1\" 8GB+512GB 5G AZUL +CAPA CINZA+KIT",
+"ref": "MO-TP1082",
+"cod": "1665345",
+"usd": 97.0,
+"img": "src/tab/1665345.jpeg"
+},
+{
+"name": "TABLET MOX MO-TP1082 DUAL 10.1\" 8GB+512GB 5G CINZA +CAPA CINZA+KIT",
+"ref": "MO-TP1082",
+"cod": "1665369",
+"usd": 97.0,
+"img": "src/tab/1665369.jpeg"
+},
+{
+"name": "TABLET MOX MO-TP732 DUAL 7\" 8GB+256GB 5G DOURAD+FONE BRANCO+CAPA",
+"ref": "MO-TP732",
+"cod": "1665376",
+"usd": 59.0,
+"img": "src/tab/1665376.jpeg"
+},
+{
+"name": "TABLET MOX MO-TP732 DUAL 7\" 8GB+256GB 5G PRETO +FONE BRANCO+CAPA PR/TR",
+"ref": "MO-TP732",
+"cod": "1665406",
+"usd": 59.0,
+"img": "src/tab/1665406.jpeg"
+},
+{
+"name": "TABLET MOX MO-TP732 DUAL 7\" 8GB+256GB 5G SILVER+FONE BRANCO+CAPA PR/TR",
+"ref": "MO-TP732",
+"cod": "1665390",
+"usd": 59.0,
+"img": "src/tab/1665390.jpeg"
+},
+{
+"name": "TABLET MOX MO-TP745 DUAL 7\" 8GB+256GB 5G AZUL+FONE BRANC+CAPA TRA/PRE",
+"ref": "MO-TP745",
+"cod": "1683455",
+"usd": 60.0,
+"img": "src/tab/1683455.jpeg"
+},
+{
+"name": "TABLET MOX MO-TP745 DUAL 7\" 8GB+256GB 5G LARANJA+FONE BRA+CAPA",
+"ref": "MO-TP745",
+"cod": "1683462",
+"usd": 60.0,
+"img": "src/tab/1683462.jpeg"
+},
+{
+"name": "TABLET MOX MO-TP745 DUAL 7\" 8GB+256GB 5G PRETO+FONE BRANC+CAPA TRA/PRE",
+"ref": "MO-TP745",
+"cod": "1683479",
+"usd": 60.0,
+"img": "src/tab/1683479.jpeg"
+},
+{
+"name": "TABLET MOX MO-TP745 DUAL 7\" 8GB+256GB 5G SILVER+ FONE BRA+CAPA TRA/PRE",
+"ref": "MO-TP745",
+"cod": "1683448",
+"usd": 60.0,
+"img": "src/tab/1683448.jpeg"
+},
+{
+"name": "TABLET SAMSUNG X133 A11 8.7\" 4GB+64GB WIFI CINZA",
+"ref": "GRAY",
+"cod": "1523584",
+"usd": 135.0,
+"img": "src/tab/1523584.jpeg"
+},
+{
+"name": "TABLET SAMSUNG X135G A11 8.7\" 4GB+64GB LTE SILVER",
+"ref": "SILVER",
+"cod": "1539820",
+"usd": 149.0,
+"img": "src/tab/1539820.jpeg"
+},
+{
+"name": "TABLET SAMSUNG X230 A11+ 11.0\" 6GB+128GB WIFI SILVER",
+"ref": "SILVER",
+"cod": "1560596",
+"usd": 225.0,
+"img": "src/tab/1560596.jpeg"
+},
+{
+"name": "TABLET SAMSUNG X230 A11+ 11.0\" 8GB+256GB WIFI SILVER",
+"ref": "SILVER",
+"cod": "1560619",
+"usd": 289.0,
+"img": "src/tab/1560619.jpeg"
+},
+{
+"name": "TABLET ULEFONE ARMOR PAD 2 DUAL 11.0\" 8GB+256GB LTE PRETO",
+"ref": "BLACK",
+"cod": "1661644",
+"usd": 269.0,
+"img": "src/tab/1661644.jpeg"
+},
+{
+"name": "TABLET ULEFONE ARMOR PAD 3 PRO DUAL 10.36\" 8GB+256GB LTE PRETO",
+"ref": "BLACK",
+"cod": "1661651",
+"usd": 289.0,
+"img": "src/tab/1661651.jpeg"
+},
+{
+"name": "TABLET ULEFONE ARMOR PAD PRO DUAL 8.0\" 8GB+128GB LTE PRETO",
+"ref": "BLACK",
+"cod": "1661668",
+"usd": 190.0,
+"img": "src/tab/1661668.jpeg"
+},
+{
+"name": "TABLET ULEFONE TAB A9 PRO DUAL 8.68\" 4GB+128GB LTE AZUL/SILVER +CAPA",
+"ref": "GALAXY BLUE",
+"cod": "1661620",
+"usd": 125.0,
+"img": "src/tab/1661620.jpeg"
+},
+{
+"name": "TABLET ULEFONE TAB A9 PRO DUAL 8.68\" 4GB+128GB LTE BRANCO/SILVER+CAPA",
+"ref": "MARBLE WHITE",
+"cod": "1661613",
+"usd": 125.0,
+"img": "src/tab/1661613.jpeg"
+},
+{
+"name": "TABLET ULEFONE TAB A12 PRO DUAL 12.2\" 8GB+128GB LTE CINZA +CAPA",
+"ref": "SPACE GRAY",
+"cod": "1661606",
+"usd": 207.0,
+"img": "src/tab/1661606.jpeg"
+},
+{
+"name": "TABLET XIAOMI PAD 7 11.2\" (3.2K 144HZ) 8GB+256GB WIFI AZUL",
+"ref": "082/BLUE",
+"cod": "1461824",
+"usd": 310.0,
+"img": "src/tab/1461824.jpeg"
+},
+{
+"name": "TABLET XIAOMI PAD 7 11.2\" (3.2K 144HZ) 8GB+256GB WIFI CINZA",
+"ref": "082/GRAY",
+"cod": "1461817",
+"usd": 310.0,
+"img": "src/tab/1461817.jpeg"
+},
+{
+"name": "TABLET XIAOMI PAD 7 11.2\" (3.2K 144HZ) 8GB+256GB WIFI VERDE",
+"ref": "082/GREEN",
+"cod": "1461831",
+"usd": 315.0,
+"img": "src/tab/1461831.jpeg"
+},
+{
+"name": "TABLET XIAOMI PAD 8 11.2\" 8GB+128GB WIFI CINZA",
+"ref": "GRAY",
+"cod": "1597103",
+"usd": 349.0,
+"img": "src/tab/1597103.jpeg"
+},
+{
+"name": "TABLET XIAOMI PAD 8 11.2\" 8GB+128GB WIFI VERDE",
+"ref": "PINE GREEN",
+"cod": "1597097",
+"usd": 349.0,
+"img": "src/tab/1597097.jpeg"
+},
+{
+"name": "TABLET XIAOMI POCO PAD M1 12.1\" 8GB+256GB WIFI AZUL",
+"ref": "P83/BLUE",
+"cod": "1550337",
+"usd": 279.0,
+"img": "src/tab/1550337.jpeg"
+},
+{
+"name": "TABLET XIAOMI POCO PAD X1 11.2\" 8GB+512GB WIFI AZUL",
+"ref": "082/AZUL/BLUE",
+"cod": "1548006",
+"usd": 329.0,
+"img": "src/tab/1548006.jpeg"
+},
+{
+"name": "TABLET XIAOMI POCO PAD X1 11.2\" 8GB+512GB WIFI CINZA",
+"ref": "082/GRIS/GREY",
+"cod": "1547993",
+"usd": 329.0,
+"img": "src/tab/1547993.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 11\" 4GB+128GB WIFI CINZA",
+"ref": "O84/GRIS/GRAPHI",
+"cod": "1481396",
+"usd": 175.0,
+"img": "src/tab/1481396.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 11\" 4GB+256GB WIFI CINZA",
+"ref": "84/GRIS GRAFITO",
+"cod": "1642155",
+"usd": 189.0,
+"img": "src/tab/1642155.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 11\" 4GB+256GB WIFI VERDE",
+"ref": "84/VERDE MENTA",
+"cod": "1642148",
+"usd": 189.0,
+"img": "src/tab/1642148.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 11\" 6GB+128GB WIFI CINZA",
+"ref": "084/GRAPHI GRAY",
+"cod": "1508635",
+"usd": 189.0,
+"img": "src/tab/1508635.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 11\" 8GB+256GB WIFI CINZA",
+"ref": "O84/GRIS/GRAPHI",
+"cod": "1480344",
+"usd": 215.0,
+"img": "src/tab/1480344.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 11\" 8GB+256GB WIFI ROXO",
+"ref": "O84/LAVEND PURP",
+"cod": "1488418",
+"usd": 220.0,
+"img": "src/tab/1488418.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 11\" 8GB+256GB WIFI VERDE",
+"ref": "O84/VD ME/MI GR",
+"cod": "1486711",
+"usd": 218.0,
+"img": "src/tab/1486711.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 9.7\" 4GB+128GB WIFI SILVER",
+"ref": "P85/SILVER",
+"cod": "1629668",
+"usd": 152.0,
+"img": "src/tab/1629668.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 BUNDLE 11\" 8GB+256GB WIFI CINZA +CAPA CINZA",
+"ref": "084/GRAPHITE GR",
+"cod": "1507157",
+"usd": 219.0,
+"img": "src/tab/1507157.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 PRO 12.1\" 6GB+128GB WIFI CINZA",
+"ref": "P83/GRAPHI GRAY",
+"cod": "1591583",
+"usd": 240.0,
+"img": "src/tab/1591583.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 PRO 12.1\" 6GB+128GB WIFI ROXO",
+"ref": "P83/LAVEND PURP",
+"cod": "1617047",
+"usd": 240.0,
+"img": "src/tab/1617047.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 PRO 12.1\" 6GB+128GB WIFI SILVER",
+"ref": "P83/SILVER",
+"cod": "1622034",
+"usd": 240.0,
+"img": "src/tab/1622034.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 PRO 12.1\" 8GB+256GB WIFI CINZA",
+"ref": "P83/GRAPHI GRAY",
+"cod": "1577334",
+"usd": 275.0,
+"img": "src/tab/1577334.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 PRO 12.1\" 8GB+256GB WIFI ROXO",
+"ref": "P83/LAVEND PURP",
+"cod": "1584288",
+"usd": 279.0,
+"img": "src/tab/1584288.jpeg"
+},
+{
+"name": "TABLET XIAOMI REDMI PAD 2 PRO 12.1\" 8GB+256GB WIFI SILVER",
+"ref": "P83/SILVER",
+"cod": "1577341",
+"usd": 275.0,
+"img": "src/tab/1577341.jpeg"
+}
+]

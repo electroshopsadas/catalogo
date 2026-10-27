@@ -1,0 +1,79 @@
+[
+{
+"sub": "Doogee",
+"name": "Doogee Blade 20 X",
+"detail": "6.6\" · 3GB+128GB · 4G · Dual SIM",
+"color": "Violeta y negro",
+"note": "",
+"cod": "1636192",
+"pricing": "celdu",
+"v": 140.0,
+"img": "src/doogee/1636192.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee Fire 5",
+"detail": "6.6\" · 3GB+64GB · 4G · Dual SIM",
+"color": "Negro y verde",
+"note": "",
+"cod": "1628678",
+"pricing": "celdu",
+"v": 115.0,
+"img": "src/doogee/1628678.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee Note 58",
+"detail": "6.75\" · 8GB+128GB · 4G · Dual SIM",
+"color": "Plateado",
+"note": "",
+"cod": "1683714",
+"pricing": "celdu",
+"v": 120.0,
+"img": "src/doogee/1683714.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee S200 Ultra",
+"detail": "6.72\" · 12GB+1TB · 5G · Dual SIM",
+"color": "Negro",
+"note": "",
+"cod": "1616316",
+"pricing": "celdu",
+"v": 435.0,
+"img": "src/doogee/1616316.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee S200 Ultra",
+"detail": "6.72\" · 12GB+1TB · 5G · Dual SIM",
+"color": "Negro y amarillo",
+"note": "",
+"cod": "1616330",
+"pricing": "celdu",
+"v": 435.0,
+"img": "src/doogee/1616330.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee V Max LR",
+"detail": "6.78\" · 16GB+512GB · 5G · Dual SIM",
+"color": "Gris y negro",
+"note": "",
+"cod": "1601763",
+"pricing": "celdu",
+"v": 420.0,
+"img": "src/doogee/1601763.jpeg"
+},
+{
+"sub": "Doogee",
+"name": "Doogee V Max LR",
+"detail": "6.78\" · 16GB+512GB · 5G · Dual SIM",
+"color": "Negro",
+"note": "",
+"cod": "1601756",
+"pricing": "celdu",
+"v": 420.0,
+"img": "src/doogee/1601756.jpeg"
+}
+]

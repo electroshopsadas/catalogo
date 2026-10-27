@@ -1,0 +1,177 @@
+[
+{
+"name": "CEL REALME C100I RMX5377 DUAL 6.8\" 4GB+128GB LTE ANATEL 8MP/5MP CINZA",
+"ref": "DUSK GRAY",
+"cod": "1617573",
+"usd": 150.0,
+"img": "src/realme/1617573.jpeg"
+},
+{
+"name": "CEL REALME C100I RMX5377 DUAL 6.8\" 4GB+256GB LTE ANATEL 8MP/5MP CINZA",
+"ref": "DUSK GRAY",
+"cod": "1617603",
+"usd": 169.0,
+"img": "src/realme/1617603.jpeg"
+},
+{
+"name": "CEL REALME C100X RMX5366 DUAL 6.8\" 4GB+128GB LTE ANATEL 50MP/5MP AZUL",
+"ref": "DEEPBLUE TIDES",
+"cod": "1617610",
+"usd": 175.0,
+"img": "src/realme/1617610.jpeg"
+},
+{
+"name": "CEL REALME C100X RMX5366 DUAL 6.8\" 4GB+128GB LTE ANATEL 50MP/5MP DOURA",
+"ref": "GOLDEN COAST",
+"cod": "1617627",
+"usd": 175.0,
+"img": "src/realme/1617627.jpeg"
+},
+{
+"name": "CEL REALME C100X RMX5366 DUAL 6.8\" 4GB+256GB LTE ANATEL 50MP/5MP AZUL",
+"ref": "DEEPBLUE TIDES",
+"cod": "1626599",
+"usd": 195.0,
+"img": "src/realme/1626599.jpeg"
+},
+{
+"name": "CEL REALME C100X RMX5366 DUAL 6.8\" 4GB+256GB LTE ANATEL 50MP/5MP DOURA",
+"ref": "GOLDEN COAST",
+"cod": "1626605",
+"usd": 195.0,
+"img": "src/realme/1626605.jpeg"
+},
+{
+"name": "CEL REALME C71 RMX3943 DUAL 6.72\" 6GB+128GB 5G ANATEL 50MP/5MP PRETO",
+"ref": "CARBON BLACK",
+"cod": "1521757",
+"usd": 155.0,
+"img": "src/realme/1521757.jpeg"
+},
+{
+"name": "CEL REALME C71 RMX5303 DUAL 6.67\" 4GB+128GB LTE ANATEL 50MP/5MP BRANCO",
+"ref": "WHITE SWAN",
+"cod": "1499025",
+"usd": 142.0,
+"img": "src/realme/1499025.jpeg"
+},
+{
+"name": "CEL REALME C85 PRO RMX5555 DUAL 6.8\" 8GB+256GB LTE ANATEL 50MP/8MP ROX",
+"ref": "PARROT PURPLE",
+"cod": "1542578",
+"usd": 226.0,
+"img": "src/realme/1542578.jpeg"
+},
+{
+"name": "CEL REALME C85 PRO RMX5555 DUAL 6.8\" 8GB+256GB LTE ANATEL 50MP/8MP VRD",
+"ref": "PEACOCK GREEN",
+"cod": "1542561",
+"usd": 226.0,
+"img": "src/realme/1542561.jpeg"
+},
+{
+"name": "CEL REALME C85 RMX5253 DUAL 6.8\" 8GB+256GB 5G ANATEL 50MP/8MP ROXO",
+"ref": "PARROT PURPLE",
+"cod": "1617559",
+"usd": 255.0,
+"img": "src/realme/1617559.jpeg"
+},
+{
+"name": "CEL REALME C85 RMX5253 DUAL 6.8\" 8GB+256GB 5G ANATEL 50MP/8MP VERDE",
+"ref": "PEACOCK GREEN",
+"cod": "1617566",
+"usd": 255.0,
+"img": "src/realme/1617566.jpeg"
+},
+{
+"name": "CEL REALME C85 RMX5566 DUAL 6.8\" 8GB+256GB LTE ANATEL 50MP/8MP AZUL",
+"ref": "KINGFISHER BLUE",
+"cod": "1557572",
+"usd": 225.0,
+"img": "src/realme/1557572.jpeg"
+},
+{
+"name": "CEL REALME C85 RMX5566 DUAL 6.8\" 8GB+256GB LTE ANATEL 50MP/8MP PRETO",
+"ref": "SWAN BLACK",
+"cod": "1557565",
+"usd": 225.0,
+"img": "src/realme/1557565.jpeg"
+},
+{
+"name": "CEL REALME NOTE 60X RMX3938 DUAL 6.74\" 4GB+128GB LTE ANATEL 8MP/5MP PR",
+"ref": "MARBLE BLACK",
+"cod": "1471052",
+"usd": 122.0,
+"img": "src/realme/1471052.jpeg"
+},
+{
+"name": "CEL REALME NOTE 60X RMX3938 DUAL 6.74\" 4GB+128GB LTE ANATEL 8MP/5MP VD",
+"ref": "WILDERNESS GREE",
+"cod": "1471069",
+"usd": 122.0,
+"img": "src/realme/1471069.jpeg"
+},
+{
+"name": "CEL REALME NOTE 70 RMX5313 DUAL 6.74\" 4GB+128GB LTE ANATEL 13MP/5MP DO",
+"ref": "BEACH GOLD",
+"cod": "1498998",
+"usd": 135.0,
+"img": "src/realme/1498998.jpeg"
+},
+{
+"name": "CEL REALME NOTE 70 RMX5313 DUAL 6.74\" 4GB+128GB LTE ANATEL 13MP/5MP PR",
+"ref": "OBSIDIAN BLACK",
+"cod": "1498981",
+"usd": 135.0,
+"img": "src/realme/1498981.jpeg"
+},
+{
+"name": "CEL REALME NOTE 70 RMX5313 DUAL 6.74\" 4GB+256GB LTE ANATEL 13MP/5MP DO",
+"ref": "BEACH GOLD",
+"cod": "1521771",
+"usd": 154.0,
+"img": "src/realme/1521771.jpeg"
+},
+{
+"name": "CEL REALME NOTE 70 RMX5313 DUAL 6.74\" 4GB+256GB LTE ANATEL 13MP/5MP PR",
+"ref": "OBSIDIAN BLACK",
+"cod": "1521788",
+"usd": 154.0,
+"img": "src/realme/1521788.jpeg"
+},
+{
+"name": "CEL REALME NOTE 70 RMX5313 DUAL 6.74\" 8GB+256GB LTE ANATEL 13MP/5MP DO",
+"ref": "BEACH GOLD",
+"cod": "1499001",
+"usd": 159.0,
+"img": "src/realme/1499001.jpeg"
+},
+{
+"name": "CEL REALME NOTE 80 RMX5388 DUAL 6.74\" 4GB+128GB LTE ANATEL 8MP/5MP AZU",
+"ref": "GLACIER BLUE",
+"cod": "1655735",
+"usd": 148.0,
+"img": "src/realme/1655735.jpeg"
+},
+{
+"name": "CEL REALME NOTE 80 RMX5388 DUAL 6.74\" 4GB+128GB LTE ANATEL 8MP/5MP PRE",
+"ref": "STORM BLACK",
+"cod": "1655728",
+"usd": 148.0,
+"img": "src/realme/1655728.jpeg"
+},
+{
+"name": "CEL REALME P4 LITE RMX5377 DUAL 6.8\" 4GB+256GB LTE ANATEL 13M/5MP CINZ",
+"ref": "TITAN GREY",
+"cod": "1618686",
+"usd": 156.0,
+"img": "src/realme/1618686.jpeg"
+},
+{
+"name": "CEL REALME P4 LITE RMX5377 DUAL 6.8\" 4GB+256GB LTE ANATEL 13M/5MP ROXO",
+"ref": "PULSE PURPLE",
+"cod": "1618693",
+"usd": 156.0,
+"img": "src/realme/1618693.jpeg"
+}
+]
