@@ -1,0 +1,122 @@
+[
+{
+"name": "MacBook Neo 13\" 256GB",
+"detail": "Chip A18 Pro • 8GB RAM • 256GB SSD COLORES DISPONIBLES Cítrico",
+"ars": 1373575,
+"img": "raw/mac_0.jpeg"
+},
+{
+"name": "MacBook Neo 13\" 256GB",
+"detail": "Chip A18 Pro • 8GB RAM • 256GB SSD COLORES DISPONIBLES Índigo Rosa",
+"ars": 1414700,
+"img": "raw/mac_1.jpeg"
+},
+{
+"name": "MacBook Neo 13\" 256GB",
+"detail": "Chip A18 Pro • 8GB RAM • 256GB SSD COLORES DISPONIBLES Plata",
+"ars": 1431150,
+"img": "raw/mac_2.jpeg"
+},
+{
+"name": "MacBook Neo 13\" 512GB",
+"detail": "Chip A18 Pro • 8GB RAM • 512GB SSD COLORES DISPONIBLES Rosa Cítrico",
+"ars": 1546300,
+"img": "raw/mac_3.jpeg"
+},
+{
+"name": "MacBook Neo 13\" 512GB",
+"detail": "Chip A18 Pro • 8GB RAM • 512GB SSD COLORES DISPONIBLES Índigo",
+"ars": 1579200,
+"img": "raw/mac_4.jpeg"
+},
+{
+"name": "MacBook Air 13\" M5 512GB",
+"detail": "Chip M5 10 núcleos • 16GB RAM • 512GB SSD • 2026 COLORES DISPONIBLES Blanco estelar",
+"ars": 2352350,
+"img": "raw/mac_5.jpeg"
+},
+{
+"name": "MacBook Air 13\" M5 512GB",
+"detail": "Chip M5 10 núcleos • 16GB RAM • 512GB SSD • 2026 COLORES DISPONIBLES Azul cielo Medianoche Plata",
+"ars": 2368800,
+"img": "raw/mac_6.jpeg"
+},
+{
+"name": "MacBook Air 13\" M5 1TB",
+"detail": "Chip M5 • 16GB RAM • 1TB SSD • 2026 COLORES DISPONIBLES Medianoche Plata Blanco estelar Azul cielo",
+"ars": 2903425,
+"img": "raw/mac_7.jpeg"
+},
+{
+"name": "MacBook Air 13\" M5 24GB / 1TB",
+"detail": "Chip M5 • 24GB RAM • 1TB SSD COLORES DISPONIBLES Blanco estelar",
+"ars": 3273550,
+"img": "raw/mac_8.jpeg"
+},
+{
+"name": "MacBook Air 13\" M5 24GB / 1TB",
+"detail": "Chip M5 • 24GB RAM • 1TB SSD COLORES DISPONIBLES Plata Azul cielo Medianoche",
+"ars": 3331125,
+"img": "raw/mac_9.jpeg"
+},
+{
+"name": "MacBook Air 15\" M5 512GB",
+"detail": "Chip M5 • 16GB RAM • 512GB SSD • Pantalla 15.3\" COLORES DISPONIBLES Medianoche",
+"ars": 2755375,
+"img": "raw/mac_10.jpeg"
+},
+{
+"name": "MacBook Air 15\" M5 512GB",
+"detail": "Chip M5 • 16GB RAM • 512GB SSD • Pantalla 15.3\" COLORES DISPONIBLES Plata",
+"ars": 2771825,
+"img": "raw/mac_11.jpeg"
+},
+{
+"name": "MacBook Air 15\" M5 512GB",
+"detail": "Chip M5 • 16GB RAM • 512GB SSD • Pantalla 15.3\" COLORES DISPONIBLES Azul cielo",
+"ars": 2780050,
+"img": "raw/mac_12.jpeg"
+},
+{
+"name": "MacBook Air 15\" M5 512GB",
+"detail": "Chip M5 • 16GB RAM • 512GB SSD • Pantalla 15.3\" COLORES DISPONIBLES Blanco estelar",
+"ars": 2829400,
+"img": "raw/mac_13.jpeg"
+},
+{
+"name": "MacBook Air 15\" M5 1TB",
+"detail": "Chip M5 • 16GB RAM • 1TB SSD COLORES DISPONIBLES Azul cielo Blanco estelar",
+"ars": 3207750,
+"img": "raw/mac_14.jpeg"
+},
+{
+"name": "MacBook Pro 14\" M5 Pro",
+"detail": "M5 Pro • 24GB RAM • 1TB SSD • Liquid Retina XDR 14.2\" COLORES DISPONIBLES Negro espacial",
+"ars": 4438210,
+"img": "raw/mac_15.jpeg"
+},
+{
+"name": "MacBook Pro 14\" M5 Pro",
+"detail": "M5 Pro 15 núcleos • 24GB RAM • 1TB SSD • 2026 COLORES DISPONIBLES Plata",
+"ars": 4499075,
+"img": "raw/mac_16.jpeg"
+},
+{
+"name": "MacBook Pro 16\" M5 Pro 24GB",
+"detail": "M5 Pro 18 núcleos • 24GB RAM • 1TB SSD • Pantalla 16.2\" COLORES DISPONIBLES Plata Negro espacial",
+"ars": 5453175,
+"img": "raw/mac_17.jpeg"
+},
+{
+"name": "MacBook Pro 16\" M5 Pro 48GB",
+"detail": "M5 Pro • 48GB RAM • 1TB SSD • Pantalla 16.2\" • 2026 COLORES DISPONIBLES Plata",
+"ars": 6464850,
+"img": "raw/mac_18.jpeg"
+},
+{
+"name": "MacBook Pro 16\" M5 Pro 48GB",
+"detail": "M5 Pro 18 núcleos • 48GB RAM • 1TB SSD • Pantalla 16.2\" • 2026 COLORES DISPONIBLES Negro espacial",
+"ars": 6563550,
+"img": "raw/mac_19.jpeg"
+}
+]

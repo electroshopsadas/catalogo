@@ -1,0 +1,74 @@
+[
+{
+"name": "Wybot A1",
+"detail": "OS2010 • 33W • Recargable • Negro",
+"ars": 634645,
+"img": "raw/pile_0.png"
+},
+{
+"name": "Wybot C1",
+"detail": "OS7010C • 65W",
+"ars": 766651,
+"img": "raw/pile_1.png"
+},
+{
+"name": "Wybot C1 Pro",
+"detail": "OS7010 • 65W • Bivolt",
+"ars": 797114,
+"img": "raw/pile_2.png"
+},
+{
+"name": "Wybot S1",
+"detail": "WY200 • 90W • Bivolt",
+"ars": 1040818,
+"img": "raw/pile_3.png"
+},
+{
+"name": "Wybot C2 Pro",
+"detail": "Negro",
+"ars": 1254059,
+"img": "raw/pile_4.png"
+},
+{
+"name": "Wybot S2",
+"detail": "WY210C • 90W • Recargable • Negro",
+"ars": 1264213,
+"img": "raw/pile_5.png"
+},
+{
+"name": "Wybot S2 Vision",
+"detail": "90W • Bivolt",
+"ars": 1416528,
+"img": "raw/pile_6.png"
+},
+{
+"name": "Aiper Scuba E1",
+"detail": "Piletas hasta 100 m² • Recargable • Bivolt • Negro",
+"ars": 731111,
+"img": "raw/pile_7.png"
+},
+{
+"name": "Aiper Surfer S1",
+"detail": "Robot skimmer de superficie",
+"ars": 949429,
+"img": "raw/pile_8.png"
+},
+{
+"name": "Aiper Scuba X1",
+"detail": "Negro",
+"ars": 1589151,
+"img": "raw/pile_9.png"
+},
+{
+"name": "Aiper Scuba X1 Pro Max",
+"detail": "Negro",
+"ars": 2904136,
+"img": "raw/pile_10.png"
+},
+{
+"name": "Dreame Pool Cleaner Z1",
+"detail": "PIXZ4111 • Recargable • Bivolt • Negro",
+"ars": 1863318,
+"img": "raw/pile_11.png"
+}
+]

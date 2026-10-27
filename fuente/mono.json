@@ -1,0 +1,104 @@
+[
+{
+"name": "Xiaomi Electric Scooter 6 Essential",
+"detail": "BHR09AQGL • Rueda 10\" • Autonomía 25 km • Negro",
+"ars": 630185,
+"img": "raw/mono_0.png"
+},
+{
+"name": "Xiaomi Electric Scooter 6 Lite",
+"detail": "DDHBC26LQ • 300W • Rueda 10\" • 25 km/h • 100 kg • 25 km",
+"ars": 630185,
+"img": "raw/mono_1.png"
+},
+{
+"name": "Xiaomi Electric Scooter 6",
+"detail": "DDHBC31LQ • Plegable • Rueda 12\" • Negro",
+"ars": 773642,
+"img": "raw/mono_2.png"
+},
+{
+"name": "Xiaomi Electric Scooter 6 Pro",
+"detail": "BHR08QQGL • Gris",
+"ars": 1019568,
+"img": "raw/mono_3.png"
+},
+{
+"name": "Xiaomi Electric Scooter 6 Max",
+"detail": "Gris / Negro",
+"ars": 1019568,
+"img": "raw/mono_4.png"
+},
+{
+"name": "Xiaomi Electric Scooter 6 Ultra",
+"detail": "Rueda 12\"",
+"ars": 1321852,
+"img": "raw/mono_5.png"
+},
+{
+"name": "Xiaomi Electric Scooter 5",
+"detail": "BHR9607FR • 700W • Rueda 10\" • Autonomía 60 km • Negro",
+"ars": 686543,
+"img": "raw/mono_6.png"
+},
+{
+"name": "Xiaomi Electric Scooter 5 Plus",
+"detail": "BHR081CUS • Bluetooth • Rueda 12\" • Autonomía 60 km • Negro",
+"ars": 778765,
+"img": "raw/mono_7.png"
+},
+{
+"name": "Xiaomi Electric Scooter 5 Pro",
+"detail": "Negro",
+"ars": 845370,
+"img": "raw/mono_8.png"
+},
+{
+"name": "Xiaomi Electric Scooter 5 Max",
+"detail": "DDHBC43ZM • 400W • Rueda 10\" • 25 km/h • 120 kg • 60 km",
+"ars": 845370,
+"img": "raw/mono_9.png"
+},
+{
+"name": "Xiaomi Electric Scooter 4 Ultra",
+"detail": "DDHBC01ZM • 500W • Rueda 10\" • 25 km/h • 120 kg • 70 km",
+"ars": 1009321,
+"img": "raw/mono_10.png"
+},
+{
+"name": "Smartfy PE01B",
+"detail": "350W • 30 km/h • Rueda 8.5\" • Negro",
+"ars": 486728,
+"img": "raw/mono_11.png"
+},
+{
+"name": "Smartfy PE02B",
+"detail": "350W • 30 km/h • Rueda 10\" • Negro",
+"ars": 573827,
+"img": "raw/mono_12.png"
+},
+{
+"name": "Interbras X-Scooter Cross",
+"detail": "Negro",
+"ars": 881235,
+"img": "raw/mono_13.png"
+},
+{
+"name": "Interbras X-Scooter Cross Evo",
+"detail": "500W • Rueda 10\" • Negro",
+"ars": 1219383,
+"img": "raw/mono_14.png"
+},
+{
+"name": "Hye HY-X10 Pro",
+"detail": "1000W • Rueda 11\" • Autonomía 65 km • Con asiento • Negro",
+"ars": 988827,
+"img": "raw/mono_15.png"
+},
+{
+"name": "Yadea G10 Off Road",
+"detail": "Rueda 10\" • Autonomía 50 km • Negro",
+"ars": 1265494,
+"img": "raw/mono_16.png"
+}
+]

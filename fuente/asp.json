@@ -1,0 +1,92 @@
+[
+{
+"name": "Xiaomi Robot Vacuum S40C",
+"detail": "Blanco",
+"ars": 330015,
+"img": "raw/asp_0.png"
+},
+{
+"name": "Xiaomi Robot Vacuum H40",
+"detail": "Con base de autovaciado • 220V • Blanco",
+"ars": 492485,
+"img": "raw/asp_1.png"
+},
+{
+"name": "Xiaomi Robot Vacuum S40 Pro",
+"detail": "OV71GL • 160W • Con base • Blanco",
+"ars": 502639,
+"img": "raw/asp_2.png"
+},
+{
+"name": "Xiaomi Robot Vacuum H50",
+"detail": "BHR08GUEU • Con base de autovaciado • Blanco",
+"ars": 644799,
+"img": "raw/asp_3.png"
+},
+{
+"name": "Xiaomi Robot Vacuum H50 Pro",
+"detail": "Con base de autovaciado • 220V • Blanco",
+"ars": 878349,
+"img": "raw/asp_4.png"
+},
+{
+"name": "Xiaomi Robot Vacuum 5",
+"detail": "OV31GL • Estación de limpieza • 220V",
+"ars": 1064173,
+"img": "raw/asp_5.png"
+},
+{
+"name": "Xiaomi Robot Vacuum 5 Pro",
+"detail": "OV21GL (BHR07WFEU) • Estación de limpieza • 220V • Blanco",
+"ars": 1274367,
+"img": "raw/asp_6.png"
+},
+{
+"name": "Xiaomi Robot Vacuum 6",
+"detail": "BHR08ZTEU • Estación de limpieza • 220V • Blanco",
+"ars": 1396219,
+"img": "raw/asp_7.png"
+},
+{
+"name": "Xiaomi Robot Vacuum 6 Max",
+"detail": "PV11GL • Estación de limpieza • 220-240V • Gris oscuro",
+"ars": 1721157,
+"img": "raw/asp_8.png"
+},
+{
+"name": "Roborock Q7 L5+",
+"detail": "Estación de autolimpieza • 8000 Pa • 220V • Blanco",
+"ars": 505685,
+"img": "raw/asp_9.png"
+},
+{
+"name": "Roborock QR 798",
+"detail": "Estación de limpieza • 10000 Pa • 220V • Blanco",
+"ars": 898657,
+"img": "raw/asp_10.png"
+},
+{
+"name": "Ecovacs Deebot T30 Pro Omni",
+"detail": "DDX14 • Estación Omni • 220V",
+"ars": 939275,
+"img": "raw/asp_11.png"
+},
+{
+"name": "Ecovacs Deebot T50 Pro Omni",
+"detail": "Estación Omni • 220V • Blanco",
+"ars": 1254059,
+"img": "raw/asp_12.png"
+},
+{
+"name": "Ecovacs Deebot T80 Omni",
+"detail": "DEX68 • Estación Omni • 220V",
+"ars": 1634846,
+"img": "raw/asp_13.png"
+},
+{
+"name": "Samsung Powerbot-e VR5000",
+"detail": "VR05R5050WK • Wi-Fi • Bivolt • Negro",
+"ars": 380787,
+"img": "raw/asp_14.png"
+}
+]

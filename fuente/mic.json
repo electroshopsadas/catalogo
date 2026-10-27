@@ -1,0 +1,86 @@
+[
+{
+"name": "DJI Mic Mini 2 Transmisor",
+"detail": "Transmisor adicional (sin receptor) REPUESTO / AMPLIACIÓN",
+"ars": 115150,
+"img": "raw/mic_0.png"
+},
+{
+"name": "DJI Mic Mini 2 (1 TX + 1 RX celular)",
+"detail": "1 micrófono + receptor para celular CON ESTUCHE DE CARGA",
+"ars": 172725,
+"img": "raw/mic_1.png"
+},
+{
+"name": "DJI Mic Mini 2 (1 TX + 1 RX)",
+"detail": "1 micrófono + receptor para cámara SIN ESTUCHE DE CARGA",
+"ars": 172725,
+"img": "raw/mic_2.png"
+},
+{
+"name": "DJI Mic Mini 2 (2 TX + 1 RX celular)",
+"detail": "2 micrófonos + receptor para celular CON ESTUCHE DE CARGA",
+"ars": 222075,
+"img": "raw/mic_3.png"
+},
+{
+"name": "DJI Mic Mini 2 (2 TX + 1 RX)",
+"detail": "2 micrófonos + receptor para cámara CON ESTUCHE DE CARGA",
+"ars": 261555,
+"img": "raw/mic_4.png"
+},
+{
+"name": "DJI Mic Mini 2S Transmisor",
+"detail": "Transmisor adicional con micrófono REPUESTO / AMPLIACIÓN",
+"ars": 180950,
+"img": "raw/mic_5.png"
+},
+{
+"name": "DJI Mic Mini 2S (1 TX + 1 RX celular)",
+"detail": "1 micrófono + receptor para celular CON ESTUCHE DE CARGA",
+"ars": 254975,
+"img": "raw/mic_6.png"
+},
+{
+"name": "DJI Mic Mini 2S (1 TX + 1 RX)",
+"detail": "1 micrófono + receptor para cámara SIN ESTUCHE DE CARGA",
+"ars": 254975,
+"img": "raw/mic_7.png"
+},
+{
+"name": "DJI Mic Mini 2S (2 TX + 1 RX)",
+"detail": "2 micrófonos + receptor CON ESTUCHE DE CARGA",
+"ars": 452375,
+"img": "raw/mic_8.png"
+},
+{
+"name": "DJI Mic 2 (1 TX + 1 RX)",
+"detail": "1 micrófono + receptor con pantalla SIN ESTUCHE DE CARGA",
+"ars": 327355,
+"img": "raw/mic_9.png"
+},
+{
+"name": "DJI Mic 2 (2 TX + 1 RX)",
+"detail": "2 micrófonos + receptor con pantalla CON ESTUCHE DE CARGA",
+"ars": 541205,
+"img": "raw/mic_10.png"
+},
+{
+"name": "DJI Mic 3 Transmisor",
+"detail": "Transmisor adicional (sin receptor) REPUESTO / AMPLIACIÓN",
+"ars": 195755,
+"img": "raw/mic_11.png"
+},
+{
+"name": "DJI Mic 3 (1 TX + 1 RX)",
+"detail": "1 micrófono + receptor con pantalla SIN ESTUCHE DE CARGA",
+"ars": 419475,
+"img": "raw/mic_12.png"
+},
+{
+"name": "DJI Mic 3 (2 TX + 1 RX)",
+"detail": "2 micrófonos + receptor con pantalla CON ESTUCHE DE CARGA",
+"ars": 551075,
+"img": "raw/mic_13.png"
+}
+]

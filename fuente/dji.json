@@ -1,0 +1,134 @@
+[
+{
+"name": "DJI Neo Fly More Combo",
+"detail": "Drone + control remoto + baterías extra",
+"ars": 624375,
+"img": "raw/dji_0.png"
+},
+{
+"name": "DJI Neo Motion Fly More Combo",
+"detail": "Con DJI Goggles N3 y RC Motion 3",
+"ars": 932400,
+"img": "raw/dji_1.png"
+},
+{
+"name": "DJI Neo 2",
+"detail": "Solo drone • Sin control remoto",
+"ars": 457875,
+"img": "raw/dji_2.png"
+},
+{
+"name": "DJI Neo 2 Fly More Combo",
+"detail": "Solo drone • Sin control remoto",
+"ars": 599400,
+"img": "raw/dji_3.png"
+},
+{
+"name": "DJI Neo 2 Fly More Combo",
+"detail": "Con control remoto",
+"ars": 790875,
+"img": "raw/dji_4.png"
+},
+{
+"name": "DJI Neo 2 Motion Fly More Combo",
+"detail": "Con DJI Goggles N3 y RC Motion 3",
+"ars": 1082250,
+"img": "raw/dji_5.png"
+},
+{
+"name": "DJI Lito 1",
+"detail": "Drone con control remoto",
+"ars": 707625,
+"img": "raw/dji_6.png"
+},
+{
+"name": "DJI Lito 1 Fly More Combo",
+"detail": "Con control DJI RC-N3",
+"ars": 999000,
+"img": "raw/dji_7.png"
+},
+{
+"name": "DJI Lito X1",
+"detail": "Drone con control remoto",
+"ars": 782550,
+"img": "raw/dji_8.png"
+},
+{
+"name": "DJI Lito X1 Fly More Combo",
+"detail": "Con control DJI RC-N3",
+"ars": 1132200,
+"img": "raw/dji_9.png"
+},
+{
+"name": "DJI Lito X1 Fly More Combo",
+"detail": "Con control DJI RC 2 (con pantalla)",
+"ars": 1332000,
+"img": "raw/dji_10.png"
+},
+{
+"name": "DJI Lito X1 Fly More Combo Plus",
+"detail": "Con control DJI RC 2 (con pantalla)",
+"ars": 1512215,
+"img": "raw/dji_11.png"
+},
+{
+"name": "DJI Mini 5 Pro",
+"detail": "Drone con control remoto",
+"ars": 1406925,
+"img": "raw/dji_12.png"
+},
+{
+"name": "DJI Mini 5 Pro Fly More Combo",
+"detail": "Con control DJI RC-N3",
+"ars": 1745315,
+"img": "raw/dji_13.png"
+},
+{
+"name": "DJI Mini 5 Pro Fly More Combo",
+"detail": "Con control DJI RC 2 (con pantalla)",
+"ars": 1995065,
+"img": "raw/dji_14.png"
+},
+{
+"name": "DJI Mini 5 Pro Fly More Combo Plus",
+"detail": "Con control DJI RC 2 (con pantalla)",
+"ars": 2144915,
+"img": "raw/dji_15.png"
+},
+{
+"name": "DJI Air 3S Fly More Combo",
+"detail": "Con control DJI RC 2 (con pantalla)",
+"ars": 2744315,
+"img": "raw/dji_16.png"
+},
+{
+"name": "DJI Avata 2 Fly Smart Combo",
+"detail": "1 batería",
+"ars": 1198800,
+"img": "raw/dji_17.png"
+},
+{
+"name": "DJI Avata 2 Fly Smart Combo",
+"detail": "3 baterías",
+"ars": 1495565,
+"img": "raw/dji_18.png"
+},
+{
+"name": "DJI Avata 2 Fly More Combo",
+"detail": "1 batería",
+"ars": 1495565,
+"img": "raw/dji_19.png"
+},
+{
+"name": "DJI Avata 2 Fly More Combo",
+"detail": "3 baterías",
+"ars": 1861865,
+"img": "raw/dji_20.png"
+},
+{
+"name": "DJI Avata 360 Fly More Combo",
+"detail": "Con control DJI RC 2",
+"ars": 1828565,
+"img": "raw/dji_21.png"
+}
+]

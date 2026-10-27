@@ -1,0 +1,110 @@
+[
+{
+"name": "DJI Osmo 360 Adventure Combo",
+"detail": "Cámara 360°",
+"ars": 1005280,
+"img": "raw/cam_0.png"
+},
+{
+"name": "DJI Osmo 360 Standard Combo",
+"detail": "Cámara 360°",
+"ars": 779092,
+"img": "raw/cam_1.png"
+},
+{
+"name": "DJI Osmo 360 II Adventure Combo",
+"detail": "Cámara 360° • 2da generación",
+"ars": 1424146,
+"img": "raw/cam_2.png"
+},
+{
+"name": "DJI Osmo 360 II Standard Combo",
+"detail": "Cámara 360° • 2da generación",
+"ars": 1164449,
+"img": "raw/cam_3.png"
+},
+{
+"name": "DJI Osmo Action 4 Adventure Combo",
+"detail": "10MP • Pantalla 2.25\"",
+"ars": 753960,
+"img": "raw/cam_4.png"
+},
+{
+"name": "DJI Osmo Action 4 Standard Combo",
+"detail": "4K • Pantalla táctil 2.25\" • Wi-Fi/Bluetooth • Negro",
+"ars": 536149,
+"img": "raw/cam_5.png"
+},
+{
+"name": "DJI Osmo Action 5 Pro Adventure Combo",
+"detail": "Cámara de acción",
+"ars": 879620,
+"img": "raw/cam_6.png"
+},
+{
+"name": "DJI Osmo Action 5 Pro Standard Combo",
+"detail": "Cámara de acción",
+"ars": 695318,
+"img": "raw/cam_7.png"
+},
+{
+"name": "DJI Osmo Action 6 Adventure Combo",
+"detail": "Cámara de acción",
+"ars": 1005280,
+"img": "raw/cam_8.png"
+},
+{
+"name": "DJI Osmo Action 6 Standard Combo",
+"detail": "8K • 50GB • Negro",
+"ars": 795846,
+"img": "raw/cam_9.png"
+},
+{
+"name": "DJI Osmo Nano",
+"detail": "35MP • Wi-Fi • 64GB • Negro",
+"ars": 569658,
+"img": "raw/cam_10.png"
+},
+{
+"name": "DJI Osmo Nano Standard Combo",
+"detail": "128GB",
+"ars": 820978,
+"img": "raw/cam_11.png"
+},
+{
+"name": "DJI Osmo Nano On-The-Go Combo",
+"detail": "128GB",
+"ars": 862865,
+"img": "raw/cam_12.png"
+},
+{
+"name": "DJI Osmo Pocket 3",
+"detail": "Cámara con estabilizador (gimbal)",
+"ars": 753960,
+"img": "raw/cam_13.png"
+},
+{
+"name": "DJI Osmo Pocket 3 Creator Combo",
+"detail": "4K • 9.4MP • Estabilizador (gimbal)",
+"ars": 1022034,
+"img": "raw/cam_14.png"
+},
+{
+"name": "DJI Osmo Pocket 4 Creator Combo",
+"detail": "Cámara con estabilizador (gimbal)",
+"ars": 1206335,
+"img": "raw/cam_15.png"
+},
+{
+"name": "DJI Osmo Pocket 4P Standard Combo",
+"detail": "Cámara con estabilizador (gimbal)",
+"ars": 1365505,
+"img": "raw/cam_16.png"
+},
+{
+"name": "DJI Osmo Pocket 4P Vlog Combo",
+"detail": "Cámara con estabilizador (gimbal)",
+"ars": 1591693,
+"img": "raw/cam_17.png"
+}
+]

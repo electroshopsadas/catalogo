@@ -1,0 +1,272 @@
+[
+{
+"name": "Asus V16 (V3607VM)",
+"detail": "Core 7 240H • RTX 5060 8GB • 16GB RAM • 512GB SSD • 16\" WUXGA COLOR: NEGRO MATE",
+"ars": 2311225,
+"img": "raw/nbg_0.png"
+},
+{
+"name": "Asus TUF A18 (FA808UH)",
+"detail": "Ryzen 7 260 • RTX 5050 8GB • 16GB RAM • 1TB SSD • 18\" WUXGA COLOR: GRIS JAEGER",
+"ars": 2377025,
+"img": "raw/nbg_1.png"
+},
+{
+"name": "Asus TUF A18 (FA808UM)",
+"detail": "Ryzen 7 260 • RTX 5060 8GB • 16GB RAM • 1TB SSD • 18\" WUXGA COLOR: GRIS JAEGER",
+"ars": 2613905,
+"img": "raw/nbg_2.png"
+},
+{
+"name": "Asus TUF A16 (FA608PM)",
+"detail": "Ryzen 9 8940HX • RTX 5060 8GB • 16GB RAM • 1TB SSD • 16\" • Teclado español COLOR: GRIS JAEGER",
+"ars": 2895200,
+"img": "raw/nbg_3.png"
+},
+{
+"name": "ROG Strix G16 (G614FM)",
+"detail": "Ryzen 9 9955HX • RTX 5060 8GB • 16GB RAM • 1TB SSD • 16\" WUXGA COLOR: GRIS ECLIPSE",
+"ars": 3110695,
+"img": "raw/nbg_4.png"
+},
+{
+"name": "ROG Strix G16 (G614PP)",
+"detail": "Ryzen 9 8940HX • RTX 5070 8GB • 16GB RAM • 1TB SSD • 16\" WUXGA COLOR: GRIS ECLIPSE",
+"ars": 3313030,
+"img": "raw/nbg_5.png"
+},
+{
+"name": "ROG Strix G16 (G614PR)",
+"detail": "Ryzen 9 8940HX • RTX 5070 Ti 12GB • 16GB RAM • 1TB SSD • 16\" 240Hz COLOR: GRIS",
+"ars": 3520300,
+"img": "raw/nbg_6.png"
+},
+{
+"name": "ROG Zephyrus G14 (GA403WW)",
+"detail": "Ryzen AI 9 HX 370 • RTX 5080 16GB • 32GB RAM • 2TB SSD • 14\" OLED COLOR: BLANCO PLATINUM",
+"ars": 5362700,
+"img": "raw/nbg_7.png"
+},
+{
+"name": "ROG Strix G18 (G815LW)",
+"detail": "Core Ultra 9 275HX • RTX 5080 16GB • 18\" COLOR: GRIS ECLIPSE",
+"ars": 5739405,
+"img": "raw/nbg_8.png"
+},
+{
+"name": "ROG Zephyrus G16 (GU606AR)",
+"detail": "Core Ultra 9 386H • RTX 5070 Ti 12GB • 16GB RAM • 1TB SSD • 16\" OLED COLOR: GRIS ECLIPSE",
+"ars": 6728050,
+"img": "raw/nbg_9.png"
+},
+{
+"name": "ROG Zephyrus G16 (GU605CX)",
+"detail": "Core Ultra 9 285H • RTX 5090 24GB • 32GB RAM • 2TB SSD • 16\" OLED COLOR: GRIS ECLIPSE",
+"ars": 7991410,
+"img": "raw/nbg_10.png"
+},
+{
+"name": "Acer Nitro V 15 (ANV15-52-58P7)",
+"detail": "Core i5 210H • RTX 4050 6GB • 15.6\" COLOR: NEGRO",
+"ars": 1932875,
+"img": "raw/nbg_11.png"
+},
+{
+"name": "Acer Nitro V 15 (AVN15-52-73JA)",
+"detail": "Core i7-13620H • RTX 5050 8GB • 16GB RAM • 1TB SSD • 15.6\" 165Hz COLOR: NEGRO OBSIDIAN",
+"ars": 2171400,
+"img": "raw/nbg_12.png"
+},
+{
+"name": "Acer Nitro V 16 (ANV16-72-789X)",
+"detail": "Core 7 240H • RTX 5050 8GB • 16GB RAM • 512GB SSD • 16\" WUXGA COLOR: NEGRO OBSIDIAN",
+"ars": 2179625,
+"img": "raw/nbg_13.png"
+},
+{
+"name": "Acer Nitro V 16 (ANV16-I31-76N7)",
+"detail": "Core 7 240H • RTX 5050 8GB • 16GB RAM • 512GB SSD • 16\" WUXGA COLOR: NEGRO OBSIDIAN",
+"ars": 2212525,
+"img": "raw/nbg_14.png"
+},
+{
+"name": "Acer Nitro V 15 (ANV15-52-73JA)",
+"detail": "Core i7-13620H • RTX 5050 6GB • 16GB RAM • 1TB SSD • 15.6\" FHD COLOR: NEGRO OBSIDIAN",
+"ars": 2212525,
+"img": "raw/nbg_15.png"
+},
+{
+"name": "Acer Nitro V 16 (ANV16-72-73EW)",
+"detail": "Core i7 Ultra • RTX 5050 8GB • 16GB RAM • 1TB SSD • 16\" COLOR: NEGRO",
+"ars": 2319450,
+"img": "raw/nbg_16.png"
+},
+{
+"name": "Acer Nitro V 16 (ANV16-I31-70WA)",
+"detail": "Core 7 240H • RTX 5060 8GB • 16GB RAM • 512GB SSD • 16\" WUXGA COLOR: NEGRO OBSIDIAN",
+"ars": 2409925,
+"img": "raw/nbg_17.png"
+},
+{
+"name": "Acer Nitro V 15 (ANV15-52-92DD)",
+"detail": "Core i9-13900H • RTX 5060 8GB • 16GB RAM • 512GB SSD • 15.6\" • Sin Windows COLOR: NEGRO OBSIDIAN",
+"ars": 2557975,
+"img": "raw/nbg_18.png"
+},
+{
+"name": "Acer Nitro V 16 (ANV16-72-98FJ)",
+"detail": "Core 9 270H • RTX 5070 8GB • 16GB RAM • 512GB SSD • 16\" COLOR: NEGRO",
+"ars": 2911650,
+"img": "raw/nbg_19.png"
+},
+{
+"name": "HP Victus 15 (FA2013DX)",
+"detail": "Core i5-13420H • RTX 3050 6GB • 8GB RAM • 512GB SSD • 15.6\" FHD COLOR: NEGRO",
+"ars": 1478855,
+"img": "raw/nbg_20.png"
+},
+{
+"name": "HP Victus 15 (FB3093DX)",
+"detail": "Ryzen 7 7445HS • RTX 4050 6GB • 16GB RAM • 512GB SSD • 15.6\" FHD COLOR: NEGRO",
+"ars": 1898330,
+"img": "raw/nbg_21.png"
+},
+{
+"name": "HP HyperX Omen 15 (GA0070WM)",
+"detail": "Core Ultra 7 255H • RTX 5060 8GB • 16GB RAM • 1TB SSD • 15.3\" WUXGA COLOR: NEGRO IRIDESCENT",
+"ars": 2829400,
+"img": "raw/nbg_22.png"
+},
+{
+"name": "HP HyperX Omen 15 (GB0090WM)",
+"detail": "Ryzen 9 8940HX • RTX 5070 8GB • 16GB RAM • 1TB SSD • 15.3\" 180Hz COLOR: NEGRO",
+"ars": 3755535,
+"img": "raw/nbg_23.png"
+},
+{
+"name": "Lenovo LOQ (83S0007FUS)",
+"detail": "Ryzen 7 170 • RTX 4050 • 16GB RAM • 512GB SSD • 15.6\" FHD COLOR: GRIS",
+"ars": 1939455,
+"img": "raw/nbg_24.png"
+},
+{
+"name": "Lenovo LOQ Essential (83VA001PUS)",
+"detail": "Ryzen 7 170 • RTX 5050 • 16GB RAM • 512GB SSD • 15.6\" FHD COLOR: NEGRO",
+"ars": 2113825,
+"img": "raw/nbg_25.png"
+},
+{
+"name": "Lenovo LOQ Essential (15IRX11)",
+"detail": "Core i7-13650HX • RTX 5060 8GB • 16GB RAM • 512GB SSD • 15.6\" FHD COLOR: NEGRO ECLIPSE",
+"ars": 2525075,
+"img": "raw/nbg_26.png"
+},
+{
+"name": "Alienware 15 (5263BLK)",
+"detail": "Ryzen 5 220 • RTX 4050 6GB • 16GB RAM • 512GB SSD • 15.3\" WUXGA COLOR: NEGRO",
+"ars": 1875300,
+"img": "raw/nbg_27.png"
+},
+{
+"name": "Alienware 15 (7724BLK)",
+"detail": "Ryzen 7 260 • RTX 5050 8GB • 16GB RAM • 1TB SSD • 15.3\" WUXGA COLOR: NEGRO",
+"ars": 2472435,
+"img": "raw/nbg_28.png"
+},
+{
+"name": "Alienware 15 (7348BLK)",
+"detail": "Ryzen 7 260 • RTX 5060 8GB • 16GB RAM • 1TB SSD • 15.3\" WUXGA COLOR: NEGRO",
+"ars": 2829400,
+"img": "raw/nbg_29.png"
+},
+{
+"name": "Alienware 15 (7348BLK)",
+"detail": "Ryzen 7 260 • RTX 5060 8GB • 16GB RAM • 1TB SSD • 15.3\" WUXGA COLOR: NEGRO",
+"ars": 2834335,
+"img": "raw/nbg_30.png"
+},
+{
+"name": "Alienware 16X Aurora (9582BLU)",
+"detail": "Core Ultra 9 275HX • RTX 5070 8GB • 32GB RAM • 2TB SSD • 16\" QHD COLOR: AZUL",
+"ars": 4045055,
+"img": "raw/nbg_31.png"
+},
+{
+"name": "Alienware 16X Aurora (9300BLU)",
+"detail": "Core Ultra 9 290HX Plus • RTX 5070 8GB • 16GB RAM • 1TB SSD • 16\" COLOR: AZUL",
+"ars": 4145400,
+"img": "raw/nbg_32.png"
+},
+{
+"name": "Alienware 16X Aurora (9300BLU)",
+"detail": "Core Ultra 9 290HX • RTX 5070 8GB • 16GB RAM • 1TB SSD • 16\" 240Hz COLOR: ÍNDIGO INTERSTELLAR",
+"ars": 4326350,
+"img": "raw/nbg_33.png"
+},
+{
+"name": "MSI Cyborg 15 (C13WE)",
+"detail": "Core i5-13420H • RTX 5050 8GB • 16GB RAM • 512GB SSD • 15.6\" FHD COLOR: GRIS PLATINUM",
+"ars": 1932875,
+"img": "raw/nbg_34.png"
+},
+{
+"name": "MSI Cyborg 15 (B2RWFKG)",
+"detail": "Core 5 210H • RTX 5060 8GB • 16GB RAM • 512GB SSD • 15.6\" FHD COLOR: NEGRO TRANSLUCENT",
+"ars": 2154950,
+"img": "raw/nbg_35.png"
+},
+{
+"name": "MSI Crosshair A16 HX (D8WFKG)",
+"detail": "Ryzen 9 8940HX • RTX 5060 8GB • 16\" COLOR: GRIS COSMOS",
+"ars": 2737280,
+"img": "raw/nbg_36.png"
+},
+{
+"name": "MSI Crosshair 16 HX (E14WFK)",
+"detail": "Core i9-14900HX • RTX 5060 8GB • 16GB RAM • 512GB SSD • 16\" QHD+ COLOR: NEGRO",
+"ars": 2786630,
+"img": "raw/nbg_37.png"
+},
+{
+"name": "MSI Cyborg 17 (B2RWFKG)",
+"detail": "Core 9 270H • RTX 5060 8GB • 16GB RAM • 1TB SSD • 17.3\" FHD COLOR: NEGRO TRANSLUCENT",
+"ars": 2854075,
+"img": "raw/nbg_38.png"
+},
+{
+"name": "MSI Crosshair 16 HX (E14WGK)",
+"detail": "Core i9-14900HX • RTX 5070 8GB • 16GB RAM • 512GB SSD • 16\" QHD+ COLOR: NEGRO",
+"ars": 3018575,
+"img": "raw/nbg_39.png"
+},
+{
+"name": "MSI Katana 15 HX (B14WGK)",
+"detail": "Core i9-14900HX • RTX 5070 8GB • 32GB RAM • 1TB SSD • 15.6\" QHD COLOR: NEGRO",
+"ars": 3781855,
+"img": "raw/nbg_40.png"
+},
+{
+"name": "MSI Stealth 16 AI Studio (A1VGG)",
+"detail": "Core Ultra 9 185H • RTX 4070 8GB • 32GB RAM • 1TB SSD • 16\" COLOR: AZUL STAR",
+"ars": 3865750,
+"img": "raw/nbg_41.png"
+},
+{
+"name": "MSI Vector 16 HX AI (A2XWIG-400US)",
+"detail": "Core Ultra 9 275HX • RTX 5080 16GB • 16GB RAM • 1TB SSD • 16\" QHD+ COLOR: GRIS COSMOS",
+"ars": 4505655,
+"img": "raw/nbg_42.png"
+},
+{
+"name": "MSI Vector 16 HX AI (A2XWIG-058US)",
+"detail": "Core Ultra 9 275HX • RTX 5080 16GB • 32GB RAM • 2TB SSD • 16\" QHD+ COLOR: GRIS COSMOS",
+"ars": 5196555,
+"img": "raw/nbg_43.png"
+},
+{
+"name": "Gigabyte A18 (3VHK3USC64SH)",
+"detail": "Ryzen 7 260 • RTX 5060 8GB • 32GB RAM • 1TB SSD • 18\" QHD+ COLOR: NEGRO",
+"ars": 2919875,
+"img": "raw/nbg_44.png"
+}
+]

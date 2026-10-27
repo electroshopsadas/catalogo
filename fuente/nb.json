@@ -1,0 +1,206 @@
+[
+{
+"name": "Dell Inspiron 15 (15250)",
+"detail": "Intel Core i5-1334U • 8GB RAM • 512GB SSD • 15\" táctil COLOR: NEGRO",
+"ars": 1052800,
+"img": "raw/nb_0.png"
+},
+{
+"name": "Dell 15 (LDC15250)",
+"detail": "Intel Core i5-1334U • 8GB RAM • 512GB SSD • 15.6\" COLOR: CARBON BLACK",
+"ars": 1077475,
+"img": "raw/nb_1.png"
+},
+{
+"name": "Dell 15 (LDC15255)",
+"detail": "AMD Ryzen 7 7730U • 16GB RAM • 512GB SSD • 15.6\" táctil FHD COLOR: CARBON NEGRO",
+"ars": 1348900,
+"img": "raw/nb_2.png"
+},
+{
+"name": "Dell 15 (LDC15250)",
+"detail": "Intel Core i7-1355U • 16GB RAM • 512GB SSD • 15.6\" táctil FHD COLOR: NEGRO",
+"ars": 1365350,
+"img": "raw/nb_3.png"
+},
+{
+"name": "HP OmniBook 17 (DP0105DX)",
+"detail": "AMD Ryzen 5 40 • 8GB RAM • 512GB SSD • 17.3\" FHD COLOR: PLATA",
+"ars": 1061025,
+"img": "raw/nb_4.png"
+},
+{
+"name": "HP OmniBook 3 16 (BU0305DX)",
+"detail": "Intel Core Ultra 5 225U • 8GB RAM • 512GB SSD • 16\" COLOR: NEGRO",
+"ars": 1077475,
+"img": "raw/nb_5.png"
+},
+{
+"name": "HP 15 (FC0027CA)",
+"detail": "AMD Ryzen 7 7730U • 16GB RAM • 512GB SSD • 15.6\" táctil FHD COLOR: PLATA",
+"ars": 1258425,
+"img": "raw/nb_6.png"
+},
+{
+"name": "HP 15 (FC0235DX)",
+"detail": "AMD Ryzen 7 7730U • 16GB RAM • 512GB SSD • 15.6\" táctil COLOR: PLATA",
+"ars": 1265005,
+"img": "raw/nb_7.png"
+},
+{
+"name": "HP OmniBook 3 16 (BU0315DX)",
+"detail": "Intel Core Ultra 5 225U • 16GB RAM • 512GB SSD • 16\" táctil COLOR: GRIS",
+"ars": 1340675,
+"img": "raw/nb_8.png"
+},
+{
+"name": "HP OmniBook 3 17 (DG0107DX)",
+"detail": "Intel Core Ultra 7 255U • 16GB RAM • 512GB SSD • 17.3\" FHD COLOR: GRIS",
+"ars": 1439375,
+"img": "raw/nb_9.png"
+},
+{
+"name": "HP OmniBook X Flip 16 (AS0023DX)",
+"detail": "Intel Core Ultra 7 256V • 16GB RAM • 1TB SSD • 16\" táctil 2K COLOR: PLATA",
+"ars": 1623615,
+"img": "raw/nb_10.png"
+},
+{
+"name": "HP OmniBook 5 16 (CD0070WM)",
+"detail": "Intel Core Ultra 7 355 • 16GB RAM • 1TB SSD • 16\" táctil COLOR: PLATA",
+"ars": 1758505,
+"img": "raw/nb_11.png"
+},
+{
+"name": "HP OmniBook 3 17 (DF0575CL)",
+"detail": "Intel Core Ultra 7 355 • 16GB RAM • 1TB SSD • 17.3\" táctil FHD COLOR: NEGRO",
+"ars": 1888460,
+"img": "raw/nb_12.png"
+},
+{
+"name": "HP OmniBook X Flip 14 (KB0023DX)",
+"detail": "Intel Core Ultra 7 355 • 16GB RAM • 1TB SSD • 14\" táctil 2K COLOR: GRIS",
+"ars": 2252005,
+"img": "raw/nb_13.png"
+},
+{
+"name": "HP OmniBook 7 Flip 16 (AU0773CL)",
+"detail": "Intel Core Ultra 7 258V • 32GB RAM • 1TB SSD • 16\" táctil 3K COLOR: PLATA",
+"ars": 2350705,
+"img": "raw/nb_14.png"
+},
+{
+"name": "HP OmniBook X Flip 16 (CB0043DX)",
+"detail": "Intel Core Ultra 9 386H • 32GB RAM • 1TB SSD • 16\" OLED táctil 3K COLOR: NEGRO",
+"ars": 3428180,
+"img": "raw/nb_15.png"
+},
+{
+"name": "Lenovo IdeaPad Slim 3 (15AMN8)",
+"detail": "AMD Ryzen 5 40 • 8GB RAM • 512GB SSD • 15.6\" FHD COLOR: AZUL ABYSS",
+"ars": 929425,
+"img": "raw/nb_16.png"
+},
+{
+"name": "Lenovo IdeaPad Slim 3 (15ABR8)",
+"detail": "AMD Ryzen 7 5825U • 16GB RAM • 512GB SSD • 15.6\" táctil FHD COLOR: GRIS ARCTIC",
+"ars": 1297905,
+"img": "raw/nb_17.png"
+},
+{
+"name": "Lenovo IdeaPad Slim 3 (15ARP10)",
+"detail": "AMD Ryzen 7 170 • 16GB RAM • 512GB SSD • 15.3\" táctil FHD COLOR: GRIS LUNA",
+"ars": 1357125,
+"img": "raw/nb_18.png"
+},
+{
+"name": "Lenovo Yoga 7 2-en-1 (16ILL10)",
+"detail": "Intel Core Ultra 7 256V • 16GB RAM • 512GB SSD • 16\" táctil COLOR: GRIS LUNA",
+"ars": 1694350,
+"img": "raw/nb_19.png"
+},
+{
+"name": "Acer Aspire Go 15 (AG15-42P)",
+"detail": "AMD Ryzen 7 7730U • 16GB RAM • 512GB SSD • 15.6\" FHD COLOR: PLATA",
+"ars": 1192625,
+"img": "raw/nb_20.png"
+},
+{
+"name": "Acer Aspire Go 15 (AG15-42P)",
+"detail": "AMD Ryzen 7 7730U • 24GB RAM • 512GB SSD • 15.6\" FHD COLOR: PLATA",
+"ars": 1314355,
+"img": "raw/nb_21.png"
+},
+{
+"name": "Acer Aspire 14 AI (A14-52M)",
+"detail": "Intel Core Ultra 7 256V • 16GB RAM • 1TB SSD • 14\" WUXGA COLOR: GRIS STEEL",
+"ars": 1413055,
+"img": "raw/nb_22.png"
+},
+{
+"name": "Acer Aspire Go 15 (AG15-72P)",
+"detail": "Intel Core i9-13900H • 16GB RAM • 512GB SSD • 15.6\" FHD COLOR: PLATA",
+"ars": 1544655,
+"img": "raw/nb_23.png"
+},
+{
+"name": "Acer Swift Go 16 AI (SFG16-A71T)",
+"detail": "AMD Ryzen AI 7 445 • 16GB RAM • 1TB SSD • 16\" táctil WUXGA COLOR: NEGRO OBSIDIAN",
+"ars": 1725605,
+"img": "raw/nb_24.png"
+},
+{
+"name": "Acer Aspire 14 AI (A14-52MT)",
+"detail": "Intel Core Ultra 9 288V • 32GB RAM • 1TB SSD • 14\" táctil WUXGA COLOR: GRIS STEEL",
+"ars": 1834175,
+"img": "raw/nb_25.png"
+},
+{
+"name": "Acer Aspire 16 AI (A16-52MT)",
+"detail": "Intel Core Ultra 9 288V • 32GB RAM • 1TB SSD • 16\" táctil WUXGA COLOR: GRIS STEEL",
+"ars": 2023350,
+"img": "raw/nb_26.png"
+},
+{
+"name": "Acer Swift Go 16 AI (SFG16-A71T)",
+"detail": "AMD Ryzen AI 9 465 • 32GB RAM • 1TB SSD • 16\" táctil WUXGA COLOR: NEGRO OBSIDIAN",
+"ars": 2136855,
+"img": "raw/nb_27.png"
+},
+{
+"name": "Acer Swift 16 AI (SF16-71T)",
+"detail": "Intel Core Ultra X7 358H • 16GB RAM • 1TB SSD • 16\" OLED táctil 2.8K COLOR: GRIS BASALT",
+"ars": 2146725,
+"img": "raw/nb_28.png"
+},
+{
+"name": "Asus Vivobook 16 (F1605VA)",
+"detail": "Intel Core i7-1355U • 16GB RAM • 512GB SSD • 16\" WUXGA COLOR: NEGRO INDIE",
+"ars": 1307775,
+"img": "raw/nb_29.png"
+},
+{
+"name": "Asus Vivobook 16 (F1605VA)",
+"detail": "Intel Core i9-13900H • 16GB RAM • 1TB SSD • 16\" WUXGA COLOR: PLATA",
+"ars": 1603875,
+"img": "raw/nb_30.png"
+},
+{
+"name": "Asus Vivobook 17 (F1704VAP)",
+"detail": "Intel Core 7 150U • 8GB RAM • 1TB SSD • 17.3\" FHD COLOR: AZUL QUIET",
+"ars": 1635130,
+"img": "raw/nb_31.png"
+},
+{
+"name": "Asus Vivobook S16 (M3607GA)",
+"detail": "AMD Ryzen AI 9 465 • 32GB RAM • 1TB SSD • 16\" táctil WUXGA COLOR: PLATA COOL",
+"ars": 2182915,
+"img": "raw/nb_32.png"
+},
+{
+"name": "Samsung Galaxy Book4 Edge (NP750XQB)",
+"detail": "Snapdragon X X1-26-100 • 16GB RAM • 512GB • 15.6\" FHD COLOR: AZUL SAPPHIRE",
+"ars": 1286390,
+"img": "raw/nb_33.png"
+}
+]

@@ -1,0 +1,20 @@
+|JBL Go 4|$ 70.065|$ 79.204
+|JBL Go 5|$ 90.373|$ 81.235
+|JBL Clip 5|$ 83.265|$ 94.435
+|JBL Grip Bluetooth|$ 100.528|$ 127.944
+|JBL Flip 7|$ 154.346|$ 167.546
+|JBL Charge 6|$ 238.627|$ 253.858
+|JBL Xtreme 4|$ 406.173|$ 446.790
+|JBL Xtreme 5|$ 517.870|$ 536.148
+|JBL Boombox 3|$ 631.599|$ 673.231
+|JBL Boombox 4|$ 665.108|$ 715.880
+|JBL PartyBox Club 120|$ 624.491|$ 649.877
+|JBL PartyBox 130|$ 639.722|$ 665.108
+|JBL PartyBox 520|$ 969.738|$ 1.012.386
+|JBL PartyBox 720|$ 1.208.364|$ 1.284.522
+|JBL PartyBox Ultimate|$ 1.797.315|$ 1.876.519
+|JBL PartyBox Ultimate 2|$ 2.132.407|$ 2.183.179
+|JBL Bar 500 MK2|$ 786.960|$ 822.500
+|JBL Bar 800 MK2|$ 1.248.981|$ 1.289.599
+|JBL Bar 1000 MK2|$ 1.391.142|$ 1.431.759
+|JBL Bar 1300 MK2|$ 1.917.136|$ 1.964.861
