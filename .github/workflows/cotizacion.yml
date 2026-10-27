@@ -1,0 +1,20 @@
+name: Cotización USDT
+on:
+  schedule:
+    - cron: "0 12 * * *"   # 9:00 Argentina
+    - cron: "0 0 * * *"    # 21:00 Argentina
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/cotizacion.py
+      - run: |
+          git config user.name "Cotizacion USDT"
+          git config user.email "actions@github.com"
+          git add sitio/cotizacion.json
+          git commit -m "Cotización USDT $(date -u +%F' '%H:%M) UTC" || echo "sin cambios"
+          git push
