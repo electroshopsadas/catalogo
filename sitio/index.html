@@ -317,6 +317,12 @@ $("#sort").addEventListener("change",e=>{state.sort=e.target.value;render()});
 $("#more").addEventListener("click",()=>{state.shown+=48;render()});
 let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{state.q=e.target.value.trim();state.shown=48;render()},150)});
 
+// Cotización en vivo (solo en el dominio propio): si falla, queda la de CFG.
+const usdtLive=location.protocol.startsWith("http")?fetch("/api/usdt").then(r=>r.ok?r.json():null).then(j=>{
+  if(j&&j.dolar>500&&j.dolar<100000){CFG.dolar=j.dolar;const d=new Date(j.actualizado);
+    CFG.actualizado=d.toLocaleString("es-AR",{timeZone:"America/Buenos_Aires",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"});
+    $("#upd").textContent=CFG.actualizado; if(ALL.length) render();}
+}).catch(()=>{}):Promise.resolve();
 fetch("productos.json",{cache:"no-cache"}).then(r=>r.json()).then(data=>{
   CATS=[...data.listas,MAS]; data.listas.forEach(l=>{if(l.promo) PROMO.add(l.id)});
   if(!CATS.some(c=>c.id===state.cat)) state.cat=CATS[0].id;
