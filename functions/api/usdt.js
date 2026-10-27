@@ -16,6 +16,8 @@ export async function onRequestGet(context) {
   const hit = await cache.match(key);
   if (hit) return hit;
   try {
+    let dolar = null, ofertas = [], fuente = "binance";
+    try {
     const r = await fetch(BINANCE, {
       method: "POST",
       headers: { "Content-Type": "application/json", "User-Agent": "Mozilla/5.0" },
@@ -24,9 +26,17 @@ export async function onRequestGet(context) {
     const j = await r.json();
     const precios = (j.data || []).map((x) => parseFloat(x.adv.price)).filter((x) => x > 0);
     if (precios.length < 3) throw new Error("sin ofertas");
-    const dolar = Math.round((precios.reduce((a, b) => a + b, 0) / precios.length) * 10) / 10;
+    ofertas = precios;
+    dolar = Math.round((precios.reduce((a, b) => a + b, 0) / precios.length) * 10) / 10;
+    } catch (e1) {
+      // Binance a veces bloquea servidores: usamos CriptoYa, que lee las ofertas de Binance P2P.
+      const r2 = await fetch("https://criptoya.com/api/binancep2p/USDT/ARS/100");
+      const k = await r2.json();
+      if (!(k.totalAsk > 0)) throw new Error("sin cotizacion");
+      dolar = Math.round(k.totalAsk * 10) / 10; fuente = "criptoya-binancep2p";
+    }
     const now = Date.now();
-    const body = JSON.stringify({ dolar, ofertas: precios, actualizado: new Date(now).toISOString() });
+    const body = JSON.stringify({ dolar, ofertas, fuente, actualizado: new Date(now).toISOString() });
     const ttl = Math.max(60, Math.floor((proximoCorte(now) - now) / 1000));
     const resp = new Response(body, { headers: { "Content-Type": "application/json", "Cache-Control": `public, max-age=${ttl}` } });
     context.waitUntil(cache.put(key, resp.clone()));
