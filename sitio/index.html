@@ -134,6 +134,33 @@ button.ask{background:none;cursor:pointer;width:100%}
 .who .go{margin-left:auto;font-weight:700;font-size:13px;color:var(--wa);white-space:nowrap}
 .more{display:flex;justify-content:center;padding-bottom:28px}
 .empty{padding:30px 0;color:var(--muted)}
+/* quienes somos */
+.team{display:flex;gap:14px;align-items:stretch;margin-top:18px;padding:12px;border-radius:16px;background:var(--surface);border:1px solid var(--line);max-width:640px}
+.reel{flex:0 0 auto;width:104px;aspect-ratio:9/16;border-radius:12px;border:0;padding:0;cursor:pointer;position:relative;overflow:hidden;color:#fff;
+  background:radial-gradient(120% 80% at 30% 20%,#3a4bd6 0%,#1a1f3a 55%,#0d0f14 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font:700 12px var(--f-body);text-align:center}
+.reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.reel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.6))}
+.reel .play{position:relative;z-index:1;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.reel .play svg{width:18px;height:18px;color:#111;margin-left:3px}
+.reel .lbl{position:absolute;z-index:1;left:0;right:0;bottom:8px;padding:0 6px}
+.team-txt{display:flex;flex-direction:column;justify-content:center;gap:6px;min-width:0}
+.team-txt h2{margin:0;font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.2}
+.team-txt p{margin:0;font-size:13.5px;color:var(--muted)}
+.team-who{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.team-who a{display:flex;align-items:center;gap:8px;padding:5px 12px 5px 5px;border-radius:999px;border:1px solid var(--line);text-decoration:none;font-weight:700;font-size:13.5px}
+.team-who a:hover{border-color:var(--wa)}
+.team-who .av{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;overflow:hidden;flex:0 0 auto}
+.team-who .av img{width:100%;height:100%;object-fit:cover}
+.team-who .av svg{width:20px;height:20px}
+.team-who .av.f{background:var(--av-f);color:var(--av-f-ink)}
+.team-who .av.m{background:var(--av-m);color:var(--av-m-ink)}
+.team-who small{color:var(--wa);font-weight:700}
+@media (max-width:440px){.reel{width:92px}.team-txt h2{font-size:15.5px}.team-txt p{font-size:13px}}
+.vbox{position:fixed;inset:0;z-index:30;background:rgba(5,6,8,.82);display:flex;align-items:center;justify-content:center;padding:16px}
+.vbox-in{width:100%;max-width:400px;display:grid;gap:10px}
+.vbox iframe{width:100%;height:min(78vh,720px);border:0;border-radius:12px;background:#fff}
+.vbox-bar{display:flex;justify-content:space-between;align-items:center;color:#fff;font-size:13.5px}
+.vbox-bar a{color:#fff}
 /* other lines */
 .lines{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;padding-bottom:28px}
 .line{display:flex;flex-direction:column;gap:6px;padding:16px;border-radius:12px;background:var(--surface);border:1px solid var(--line)}
@@ -170,6 +197,17 @@ footer b{color:var(--ink)}
       <li><i></i>Envíos a todo el país, a domicilio o a sucursal</li>
       <li><i></i>Precio mayorista en celulares desde 3 unidades</li>
     </ul>
+    <div class="team" id="team">
+      <button type="button" class="reel" id="reel" aria-label="Ver video: quiénes somos">
+        <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span>
+        <span class="lbl">Conocenos</span>
+      </button>
+      <div class="team-txt">
+        <h2>Somos Agustín y Natalia 👋</h2>
+        <p>Atendemos personalmente cada consulta. Escribinos directo por WhatsApp y te asesoramos.</p>
+        <div class="team-who" id="team-who"></div>
+      </div>
+    </div>
   </section>
 
   <div class="wrap">
@@ -193,6 +231,7 @@ footer b{color:var(--ink)}
 </main>
 <div class="pick" id="pick" hidden role="dialog" aria-modal="true" aria-labelledby="pick-t"><div class="pick-box"><div class="pick-head"><div><h2 id="pick-t">¿Con quién querés hablar?</h2><p id="pick-p"></p></div><button type="button" class="pick-x" id="pick-x" aria-label="Cerrar">×</button></div><div id="pick-list"></div></div></div>
 
+<div class="vbox" id="vbox" hidden role="dialog" aria-modal="true" aria-label="Video: quiénes somos"><div class="vbox-in"><div class="vbox-bar"><a href="https://www.instagram.com/reel/DcyiGx2z3YO/" target="_blank" rel="noopener">Ver en Instagram</a><button type="button" class="pick-x" id="vbox-x" aria-label="Cerrar">×</button></div><div id="vbox-v"></div></div></div>
 <footer><div class="wrap">
   <span><b>Electro Shop Sadas</b> · Productos originales con garantía oficial</span>
   <span>Envíos a todo el país</span>
@@ -301,6 +340,14 @@ function setCat(id){state.cat=id;state.sub="";state.shown=48;state.q="";$("#q").
 
 $("#upd").textContent=CFG.actualizado;
 $("#wa").hidden=false;
+// Quiénes somos: contactos con foto y video de Instagram (se carga solo al tocar)
+const REEL="https://www.instagram.com/reel/DcyiGx2z3YO/embed/";
+$("#team-who").innerHTML=[...CFG.contactos].reverse().map(c=>`<a href="${waUrl(c.tel,"")}" target="_blank" rel="noopener"><span class="av ${c.tipo}">${c.foto?`<img src="${c.foto}" alt="">`:AV[c.tipo]}</span>${esc(c.nombre)} <small>Escribir</small></a>`).join("");
+$("#reel").addEventListener("click",()=>{$("#vbox-v").innerHTML=`<iframe src="${REEL}" allow="autoplay; encrypted-media; fullscreen" allowfullscreen loading="lazy" title="Video quiénes somos"></iframe>`;$("#vbox").hidden=false});
+const closeV=()=>{$("#vbox").hidden=true;$("#vbox-v").innerHTML=""};
+$("#vbox-x").addEventListener("click",closeV);
+$("#vbox").addEventListener("click",e=>{if(e.target.id==="vbox") closeV()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#vbox").hidden) closeV()});
 $("#wa").addEventListener("click",()=>openPick(""));
 document.addEventListener("click",e=>{const b=e.target.closest("button.ask[data-msg]");if(b) openPick(b.dataset.msg)});
 $("#pick-x").addEventListener("click",closePick);
