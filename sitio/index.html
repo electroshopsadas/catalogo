@@ -127,6 +127,7 @@ button.ask{background:none;cursor:pointer;width:100%}
 .who:hover{border-color:var(--wa)}
 .who .av{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto}
 .who .av svg{width:30px;height:30px}
+.who .av img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 .who .av.f{background:var(--av-f);color:var(--av-f-ink)}
 .who .av.m{background:var(--av-m);color:var(--av-m-ink)}
 .who b{display:block;font-size:16px}
@@ -159,7 +160,7 @@ button.ask{background:none;cursor:pointer;width:100%}
 @media (max-width:440px){.reel{width:92px}.team-txt h2{font-size:15.5px}.team-txt p{font-size:13px}}
 .vbox{position:fixed;inset:0;z-index:30;background:rgba(5,6,8,.82);display:flex;align-items:center;justify-content:center;padding:16px}
 .vbox-in{width:100%;max-width:400px;display:grid;gap:10px}
-.vbox iframe{width:100%;height:min(78vh,720px);border:0;border-radius:12px;background:#fff}
+.vbox video{width:100%;max-height:80vh;aspect-ratio:9/16;object-fit:contain;border-radius:12px;background:#000;display:block}
 .vbox-bar{display:flex;justify-content:space-between;align-items:center;color:#fff;font-size:13.5px}
 .vbox-bar a{color:#fff}
 /* other lines */
@@ -190,10 +191,10 @@ footer b{color:var(--ink)}
 <main>
   <section class="wrap intro">
     <div class="team" id="team">
-      <a class="reel" id="reel" href="https://www.instagram.com/reel/DcyiGx2z3YO/" target="_blank" rel="noopener" aria-label="Ver video en Instagram: quiénes somos">
+      <button type="button" class="reel" id="reel" aria-label="Ver video: quiénes somos"><img src="quienes-somos-poster.jpg" alt="" loading="lazy">
         <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span>
         <span class="lbl">Conocenos</span>
-      </a>
+      </button>
       <div class="team-txt">
         <h2>Somos Agustín y Natalia 👋</h2>
         <p>Atendemos personalmente cada consulta. Escribinos directo por WhatsApp y te asesoramos.</p>
@@ -232,7 +233,7 @@ footer b{color:var(--ink)}
 </main>
 <div class="pick" id="pick" hidden role="dialog" aria-modal="true" aria-labelledby="pick-t"><div class="pick-box"><div class="pick-head"><div><h2 id="pick-t">¿Con quién querés hablar?</h2><p id="pick-p"></p></div><button type="button" class="pick-x" id="pick-x" aria-label="Cerrar">×</button></div><div id="pick-list"></div></div></div>
 
-<div class="vbox" id="vbox" hidden role="dialog" aria-modal="true" aria-label="Video: quiénes somos"><div class="vbox-in"><div class="vbox-bar"><a href="https://www.instagram.com/reel/DcyiGx2z3YO/" target="_blank" rel="noopener">Ver en Instagram</a><button type="button" class="pick-x" id="vbox-x" aria-label="Cerrar">×</button></div><div id="vbox-v"></div></div></div>
+<div class="vbox" id="vbox" hidden role="dialog" aria-modal="true" aria-label="Video: quiénes somos"><div class="vbox-in"><div class="vbox-bar"><a href="https://www.instagram.com/electroshop.sadas/" target="_blank" rel="noopener">Seguinos en Instagram</a><button type="button" class="pick-x" id="vbox-x" aria-label="Cerrar">×</button></div><div id="vbox-v"></div></div></div>
 <footer><div class="wrap">
   <span><b>Electro Shop Sadas</b> · Productos originales con garantía oficial</span>
   <span>Envíos a todo el país</span>
@@ -246,7 +247,7 @@ const CFG={
   actualizado:"27/10/2026 22:43",
   dolar:1648.4,           // USDT Binance P2P, promedio de las primeras 5 ofertas
   // WhatsApp: el cliente elige con quién hablar (549 + área + número)
-  contactos:[{nombre:"Natalia",tel:"5493755554000",ver:"3755 55-4000",tipo:"f"},{nombre:"Agustín",tel:"5493764330010",ver:"3764 33-0010",tipo:"m"}],
+  contactos:[{nombre:"Natalia",tel:"5493755554000",ver:"3755 55-4000",tipo:"f",foto:"av-natalia.jpg"},{nombre:"Agustín",tel:"5493764330010",ver:"3764 33-0010",tipo:"m",foto:"av-agustin.jpg"}],
   instagram:"https://www.instagram.com/electroshop.sadas/",
   // celulares: [hasta U$, recargo minorista, recargo mayorista]
   celulares:[[150,30,18],[300,40,25],[500,50,25],[800,60,30],[1300,70,35],[2000,80,45],[3000,100,50]],
@@ -283,7 +284,7 @@ const AV={f:'<svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><pa
 const waUrl=(tel,text)=>`https://wa.me/${tel}`+(text?`?text=${encodeURIComponent(text)}`:"");
 function openPick(text){
   $("#pick-p").textContent=text?"Te abrimos WhatsApp con tu consulta ya escrita.":"Elegí con quién querés hablar por WhatsApp.";
-  $("#pick-list").innerHTML=CFG.contactos.map(c=>`<a class="who" href="${waUrl(c.tel,text)}" target="_blank" rel="noopener"><span class="av ${c.tipo}">${AV[c.tipo]}</span><span><b>${esc(c.nombre)}</b><small>${esc(c.ver)}</small></span><span class="go">Escribir</span></a>`).join("");
+  $("#pick-list").innerHTML=CFG.contactos.map(c=>`<a class="who" href="${waUrl(c.tel,text)}" target="_blank" rel="noopener"><span class="av ${c.tipo}">${c.foto?`<img src="${c.foto}" alt="">`:AV[c.tipo]}</span><span><b>${esc(c.nombre)}</b><small>${esc(c.ver)}</small></span><span class="go">Escribir</span></a>`).join("");
   $("#pick").hidden=false; $("#pick-x").focus();
 }
 function closePick(){$("#pick").hidden=true}
@@ -342,9 +343,9 @@ function setCat(id){state.cat=id;state.sub="";state.shown=48;state.q="";$("#q").
 $("#upd").textContent=CFG.actualizado;
 $("#wa").hidden=false;
 // Quiénes somos: contactos con foto y video de Instagram (se carga solo al tocar)
-const REEL="https://www.instagram.com/reel/DcyiGx2z3YO/embed/";
 $("#team-who").innerHTML=[...CFG.contactos].reverse().map(c=>`<a href="${waUrl(c.tel,"")}" target="_blank" rel="noopener"><span class="av ${c.tipo}">${c.foto?`<img src="${c.foto}" alt="">`:AV[c.tipo]}</span>${esc(c.nombre)} <small>Escribir</small></a>`).join("");
 
+$("#reel").addEventListener("click",()=>{$("#vbox-v").innerHTML='<video src="quienes-somos.mp4?v=1" poster="quienes-somos-poster.jpg" controls autoplay playsinline></video>';$("#vbox").hidden=false});
 const closeV=()=>{$("#vbox").hidden=true;$("#vbox-v").innerHTML=""};
 $("#vbox-x").addEventListener("click",closeV);
 $("#vbox").addEventListener("click",e=>{if(e.target.id==="vbox") closeV()});
