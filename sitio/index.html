@@ -135,7 +135,7 @@ button.ask{background:none;cursor:pointer;width:100%}
 .more{display:flex;justify-content:center;padding-bottom:28px}
 .empty{padding:30px 0;color:var(--muted)}
 /* quienes somos */
-.team{display:flex;gap:14px;align-items:stretch;margin-top:18px;padding:12px;border-radius:16px;background:var(--surface);border:1px solid var(--line);max-width:640px}
+.team{display:flex;gap:14px;align-items:stretch;margin-bottom:18px;padding:12px;border-radius:16px;background:var(--surface);border:1px solid var(--line);max-width:640px}
 .reel{flex:0 0 auto;width:104px;aspect-ratio:9/16;border-radius:12px;border:0;padding:0;cursor:pointer;position:relative;overflow:hidden;color:#fff;
   background:radial-gradient(120% 80% at 30% 20%,#3a4bd6 0%,#1a1f3a 55%,#0d0f14 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font:700 12px var(--f-body);text-align:center}
 .reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -155,6 +155,7 @@ button.ask{background:none;cursor:pointer;width:100%}
 .team-who .av.f{background:var(--av-f);color:var(--av-f-ink)}
 .team-who .av.m{background:var(--av-m);color:var(--av-m-ink)}
 .team-who small{color:var(--wa);font-weight:700}
+@media (max-width:600px){.intro{padding-top:14px}.intro h1{font-size:21px;margin-bottom:6px}.intro p{font-size:13.5px}.facts{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-top:12px;margin-right:-16px;padding-right:16px}.facts::-webkit-scrollbar{display:none}.facts li{flex:0 0 auto;font-size:12.5px;padding:6px 10px}.cats-head{padding-top:14px}}
 @media (max-width:440px){.reel{width:92px}.team-txt h2{font-size:15.5px}.team-txt p{font-size:13px}}
 .vbox{position:fixed;inset:0;z-index:30;background:rgba(5,6,8,.82);display:flex;align-items:center;justify-content:center;padding:16px}
 .vbox-in{width:100%;max-width:400px;display:grid;gap:10px}
@@ -188,15 +189,6 @@ footer b{color:var(--ink)}
 
 <main>
   <section class="wrap intro">
-    <h1>Tecnología y perfumes importados</h1>
-    <p>Precios en pesos argentinos, actualizados al <span id="upd"></span>. Consultá stock antes de comprar: los precios pueden cambiar sin previo aviso.</p>
-    <ul class="facts">
-      <li><i></i>Productos 100% originales: electrónica y perfumes</li>
-      <li><i></i>Garantía oficial</li>
-      <li><i></i>Equipos nuevos y sellados</li>
-      <li><i></i>Envíos a todo el país, a domicilio o a sucursal</li>
-      <li><i></i>Precio mayorista en celulares desde 3 unidades</li>
-    </ul>
     <div class="team" id="team">
       <button type="button" class="reel" id="reel" aria-label="Ver video: quiénes somos">
         <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span>
@@ -208,6 +200,15 @@ footer b{color:var(--ink)}
         <div class="team-who" id="team-who"></div>
       </div>
     </div>
+    <h1>Tecnología y perfumes importados</h1>
+    <p>Precios en pesos argentinos, actualizados al <span id="upd"></span>. Consultá stock antes de comprar: los precios pueden cambiar sin previo aviso.</p>
+    <ul class="facts">
+      <li><i></i>Productos 100% originales: electrónica y perfumes</li>
+      <li><i></i>Garantía oficial</li>
+      <li><i></i>Equipos nuevos y sellados</li>
+      <li><i></i>Envíos a todo el país, a domicilio o a sucursal</li>
+      <li><i></i>Precio mayorista en celulares desde 3 unidades</li>
+    </ul>
   </section>
 
   <div class="wrap">
