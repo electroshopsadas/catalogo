@@ -173,14 +173,14 @@ button.ask{background:none;cursor:pointer;width:100%}
 .lbanner span{display:block;font-size:clamp(12.5px,1.5vw,15px);opacity:.92;margin-top:3px}
 @media (max-width:600px){.lbanner{aspect-ratio:16/10}.lbanner div{padding:10px 12px}}
 .lbanner.full{aspect-ratio:auto;max-height:none;max-width:680px;background:#14171a}
-.lbanner.full img{position:static;display:block;height:auto}
+.lbanner.full>img{position:static;display:block;height:auto}
 .lbanner.full::after{display:none}
-.lbanner.full div{position:static}
+.lbanner.full>div:not(.slides){position:static}
 .slides{position:relative;aspect-ratio:4/3;overflow:hidden;background:#14171a}
 .slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
 .slide.on{opacity:1}
-.slide .bg{position:absolute;inset:-20px;width:calc(100% + 40px);height:calc(100% + 40px);object-fit:cover;filter:blur(18px) brightness(.7)}
-.slide .fg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.lbanner .slide img.bg{position:absolute;inset:-20px;width:calc(100% + 40px);height:calc(100% + 40px);object-fit:cover;filter:blur(18px) brightness(.7)}
+.lbanner .slide img.fg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
 .dots{position:absolute;right:10px;top:10px;z-index:2;display:flex;gap:5px}
 .dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5)}
 .dots i.on{background:#fff}
