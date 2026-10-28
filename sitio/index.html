@@ -176,6 +176,14 @@ button.ask{background:none;cursor:pointer;width:100%}
 .lbanner.full img{position:static;display:block;height:auto}
 .lbanner.full::after{display:none}
 .lbanner.full div{position:static}
+.slides{position:relative;aspect-ratio:4/3;overflow:hidden;background:#14171a}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
+.slide.on{opacity:1}
+.slide .bg{position:absolute;inset:-20px;width:calc(100% + 40px);height:calc(100% + 40px);object-fit:cover;filter:blur(18px) brightness(.7)}
+.slide .fg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.dots{position:absolute;right:10px;top:10px;z-index:2;display:flex;gap:5px}
+.dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5)}
+.dots i.on{background:#fff}
 /* other lines */
 .lines{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;padding-bottom:28px}
 .line{display:flex;flex-direction:column;gap:6px;padding:16px;border-radius:12px;background:var(--surface);border:1px solid var(--line)}
@@ -341,7 +349,7 @@ function render(){
   document.querySelectorAll(".tab").forEach(t=>t.setAttribute("aria-selected",String(!state.q&&t.dataset.id===state.cat)));
   $("#lines").hidden=!isMas; $("#grid").hidden=isMas; $("#tools").hidden=isMas||!!state.q;
   const cat=CATS.find(c=>c.id===state.cat);
-  $("#lbanner").innerHTML=(!state.q&&cat&&cat.banner&&cat.banner.video)?`<div class="team vban"><button type="button" class="reel" data-video="${cat.banner.video}" data-poster="${cat.banner.poster}" aria-label="Ver video"><img src="${cat.banner.poster}" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span><span class="lbl">Ver video</span></button><div class="team-txt"><h2>${esc(cat.banner.t)}</h2><p>${esc(cat.banner.d)}</p></div></div>`:(!state.q&&cat&&cat.banner)?`<figure class="lbanner${cat.banner.full?" full":""}"><img src="${cat.banner.img}" alt="${esc(cat.banner.t)}"${cat.banner.pos?` style="object-position:${cat.banner.pos}"`:""}><div><b>${esc(cat.banner.t)}</b><span>${esc(cat.banner.d)}</span></div></figure>`:"";
+  {const bk=(state.q?"":state.cat);const lb=$("#lbanner");if(lb.dataset.k!==bk){lb.dataset.k=bk;lb.innerHTML=(!state.q&&cat&&cat.banner&&cat.banner.video)?`<div class="team vban"><button type="button" class="reel" data-video="${cat.banner.video}" data-poster="${cat.banner.poster}" aria-label="Ver video"><img src="${cat.banner.poster}" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span><span class="lbl">Ver video</span></button><div class="team-txt"><h2>${esc(cat.banner.t)}</h2><p>${esc(cat.banner.d)}</p></div></div>`:(!state.q&&cat&&cat.banner&&cat.banner.imgs)?`<figure class="lbanner full"><div class="slides">${cat.banner.imgs.map((u,i)=>`<div class="slide${i?"":" on"}"><img class="bg" src="${u}" alt="" aria-hidden="true"><img class="fg" src="${u}" alt="${esc(cat.banner.t)}"></div>`).join("")}<span class="dots">${cat.banner.imgs.map((u,i)=>`<i${i?"":' class="on"'}></i>`).join("")}</span></div><div><b>${esc(cat.banner.t)}</b><span>${esc(cat.banner.d)}</span></div></figure>`:(!state.q&&cat&&cat.banner)?`<figure class="lbanner${cat.banner.full?" full":""}"><img src="${cat.banner.img}" alt="${esc(cat.banner.t)}"${cat.banner.pos?` style="object-position:${cat.banner.pos}"`:""}><div><b>${esc(cat.banner.t)}</b><span>${esc(cat.banner.d)}</span></div></figure>`:"";rotateSlides()}}
   $("#terms").innerHTML=!cat?"":state.q?`Resultados en todas las categorías. Celulares con precio mayorista desde ${CFG.minimoMayorista} unidades; perfumes con compra mínima de ${CFG.minimoPerfumes} unidades.`:fillTerms(cat.terms);
   if(isMas){$("#count").textContent="";$("#more").hidden=true;return}
   const subs=[...new Set(ALL.filter(p=>p.cat===state.cat).map(p=>p.sub))];
@@ -352,6 +360,9 @@ function render(){
   $("#more").hidden=L.length<=state.shown;
   $("#more").textContent=`Ver más (${L.length-state.shown} restantes)`;
 }
+let slideT;
+function rotateSlides(){clearInterval(slideT);const sl=[...document.querySelectorAll("#lbanner .slide")];if(sl.length<2) return;const dt=[...document.querySelectorAll("#lbanner .dots i")];let k=0;
+  slideT=setInterval(()=>{sl[k].classList.remove("on");dt[k]&&dt[k].classList.remove("on");k=(k+1)%sl.length;sl[k].classList.add("on");dt[k]&&dt[k].classList.add("on")},4000)}
 function setCat(id){state.cat=id;state.sub="";state.shown=48;state.q="";$("#q").value="";render();
   try{history.replaceState(null,"","#"+id)}catch(e){}}
 
