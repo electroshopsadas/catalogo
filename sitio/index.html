@@ -164,6 +164,7 @@ button.ask{background:none;cursor:pointer;width:100%}
 .vbox-bar{display:flex;justify-content:space-between;align-items:center;color:#fff;font-size:13.5px}
 .vbox-bar a{color:#fff}
 /* banner de lista */
+.vban{margin:12px 0 2px;max-width:none}
 .lbanner{position:relative;border-radius:14px;overflow:hidden;margin:12px 0 2px;aspect-ratio:16/7;background:#111;max-height:340px;width:100%}
 .lbanner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
 .lbanner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.78))}
@@ -203,7 +204,7 @@ footer b{color:var(--ink)}
 <main>
   <section class="wrap intro">
     <div class="team" id="team">
-      <button type="button" class="reel" id="reel" aria-label="Ver video: quiénes somos"><img src="conocenos.jpg" alt="" loading="lazy">
+      <button type="button" class="reel" id="reel" aria-label="Ver video: quiénes somos"><img src="conocenos-sm.jpg" alt="" loading="lazy">
         <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span>
         <span class="lbl">Conocenos</span>
       </button>
@@ -340,7 +341,7 @@ function render(){
   document.querySelectorAll(".tab").forEach(t=>t.setAttribute("aria-selected",String(!state.q&&t.dataset.id===state.cat)));
   $("#lines").hidden=!isMas; $("#grid").hidden=isMas; $("#tools").hidden=isMas||!!state.q;
   const cat=CATS.find(c=>c.id===state.cat);
-  $("#lbanner").innerHTML=(!state.q&&cat&&cat.banner)?`<figure class="lbanner${cat.banner.full?" full":""}"><img src="${cat.banner.img}" alt="${esc(cat.banner.t)}"${cat.banner.pos?` style="object-position:${cat.banner.pos}"`:""}><div><b>${esc(cat.banner.t)}</b><span>${esc(cat.banner.d)}</span></div></figure>`:"";
+  $("#lbanner").innerHTML=(!state.q&&cat&&cat.banner&&cat.banner.video)?`<div class="team vban"><button type="button" class="reel" data-video="${cat.banner.video}" data-poster="${cat.banner.poster}" aria-label="Ver video"><img src="${cat.banner.poster}" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span><span class="lbl">Ver video</span></button><div class="team-txt"><h2>${esc(cat.banner.t)}</h2><p>${esc(cat.banner.d)}</p></div></div>`:(!state.q&&cat&&cat.banner)?`<figure class="lbanner${cat.banner.full?" full":""}"><img src="${cat.banner.img}" alt="${esc(cat.banner.t)}"${cat.banner.pos?` style="object-position:${cat.banner.pos}"`:""}><div><b>${esc(cat.banner.t)}</b><span>${esc(cat.banner.d)}</span></div></figure>`:"";
   $("#terms").innerHTML=!cat?"":state.q?`Resultados en todas las categorías. Celulares con precio mayorista desde ${CFG.minimoMayorista} unidades; perfumes con compra mínima de ${CFG.minimoPerfumes} unidades.`:fillTerms(cat.terms);
   if(isMas){$("#count").textContent="";$("#more").hidden=true;return}
   const subs=[...new Set(ALL.filter(p=>p.cat===state.cat).map(p=>p.sub))];
@@ -359,7 +360,9 @@ $("#wa").hidden=false;
 // Quiénes somos: contactos con foto y video de Instagram (se carga solo al tocar)
 $("#team-who").innerHTML=[...CFG.contactos].reverse().map(c=>`<a href="${waUrl(c.tel,"")}" target="_blank" rel="noopener"><span class="av ${c.tipo}">${c.foto?`<img src="${c.foto}" alt="">`:AV[c.tipo]}</span>${esc(c.nombre)} <small>Escribir</small></a>`).join("");
 
-$("#reel").addEventListener("click",()=>{$("#vbox-v").innerHTML='<video src="quienes-somos.mp4?v=1" poster="conocenos.jpg" controls autoplay playsinline></video>';$("#vbox").hidden=false});
+function openVideo(src,poster){$("#vbox-v").innerHTML=`<video src="${src}" poster="${poster}" controls autoplay playsinline></video>`;$("#vbox").hidden=false}
+$("#reel").addEventListener("click",()=>openVideo("quienes-somos.mp4?v=1","conocenos-sm.jpg"));
+document.addEventListener("click",e=>{const b=e.target.closest(".reel[data-video]");if(b) openVideo(b.dataset.video,b.dataset.poster)});
 const closeV=()=>{$("#vbox").hidden=true;$("#vbox-v").innerHTML=""};
 $("#vbox-x").addEventListener("click",closeV);
 $("#vbox").addEventListener("click",e=>{if(e.target.id==="vbox") closeV()});
