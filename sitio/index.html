@@ -139,7 +139,7 @@ button.ask{background:none;cursor:pointer;width:100%}
 .team{display:flex;gap:14px;align-items:stretch;margin-bottom:18px;padding:12px;border-radius:16px;background:var(--surface);border:1px solid var(--line);max-width:640px}
 .reel{text-decoration:none;flex:0 0 auto;width:104px;aspect-ratio:9/16;border-radius:12px;border:0;padding:0;cursor:pointer;position:relative;overflow:hidden;color:#fff;
   background:radial-gradient(120% 80% at 30% 20%,#3a4bd6 0%,#1a1f3a 55%,#0d0f14 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font:700 12px var(--f-body);text-align:center}
-.reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
 .reel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.6))}
 .reel .play{position:relative;z-index:1;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.35)}
 .reel .play svg{width:18px;height:18px;color:#111;margin-left:3px}
@@ -191,7 +191,7 @@ footer b{color:var(--ink)}
 <main>
   <section class="wrap intro">
     <div class="team" id="team">
-      <button type="button" class="reel" id="reel" aria-label="Ver video: quiénes somos"><img src="quienes-somos-poster.jpg" alt="" loading="lazy">
+      <button type="button" class="reel" id="reel" aria-label="Ver video: quiénes somos"><img src="conocenos.jpg" alt="" loading="lazy">
         <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span>
         <span class="lbl">Conocenos</span>
       </button>
@@ -247,7 +247,7 @@ const CFG={
   actualizado:"27/10/2026 22:43",
   dolar:1648.4,           // USDT Binance P2P, promedio de las primeras 5 ofertas
   // WhatsApp: el cliente elige con quién hablar (549 + área + número)
-  contactos:[{nombre:"Natalia",tel:"5493755554000",ver:"3755 55-4000",tipo:"f",foto:"av-natalia.jpg"},{nombre:"Agustín",tel:"5493764330010",ver:"3764 33-0010",tipo:"m",foto:"av-agustin.jpg"}],
+  contactos:[{nombre:"Natalia",tel:"5493755554000",ver:"3755 55-4000",tipo:"f",foto:"foto-natalia.jpg"},{nombre:"Agustín",tel:"5493764330010",ver:"3764 33-0010",tipo:"m",foto:"foto-agustin.jpg"}],
   instagram:"https://www.instagram.com/electroshop.sadas/",
   // celulares: [hasta U$, recargo minorista, recargo mayorista]
   celulares:[[150,30,18],[300,40,25],[500,50,25],[800,60,30],[1300,70,35],[2000,80,45],[3000,100,50]],
@@ -345,7 +345,7 @@ $("#wa").hidden=false;
 // Quiénes somos: contactos con foto y video de Instagram (se carga solo al tocar)
 $("#team-who").innerHTML=[...CFG.contactos].reverse().map(c=>`<a href="${waUrl(c.tel,"")}" target="_blank" rel="noopener"><span class="av ${c.tipo}">${c.foto?`<img src="${c.foto}" alt="">`:AV[c.tipo]}</span>${esc(c.nombre)} <small>Escribir</small></a>`).join("");
 
-$("#reel").addEventListener("click",()=>{$("#vbox-v").innerHTML='<video src="quienes-somos.mp4?v=1" poster="quienes-somos-poster.jpg" controls autoplay playsinline></video>';$("#vbox").hidden=false});
+$("#reel").addEventListener("click",()=>{$("#vbox-v").innerHTML='<video src="quienes-somos.mp4?v=1" poster="conocenos.jpg" controls autoplay playsinline></video>';$("#vbox").hidden=false});
 const closeV=()=>{$("#vbox").hidden=true;$("#vbox-v").innerHTML=""};
 $("#vbox-x").addEventListener("click",closeV);
 $("#vbox").addEventListener("click",e=>{if(e.target.id==="vbox") closeV()});
