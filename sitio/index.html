@@ -203,6 +203,8 @@ button.ask{background:none;cursor:pointer;width:100%}
 .qty span{min-width:20px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
 .ctotal{display:flex;justify-content:space-between;align-items:baseline;font-weight:800;font-size:18px;padding-top:6px}
 .cnote{font-size:12.5px;color:var(--muted);margin:0}
+.cmay{font-size:13px;margin:10px 0 0;padding:8px 10px;border-radius:8px;background:var(--accent-soft)}
+.cmay.ok{font-weight:700}
 .cart-box .btn.wa{justify-content:center;width:100%;font-size:15px;padding:12px}
 .clear{border:0;background:none;color:var(--muted);text-decoration:underline;font:500 13px var(--f-body);cursor:pointer;justify-self:center}
 .cempty{color:var(--muted);padding:12px 0}
@@ -252,7 +254,7 @@ footer b{color:var(--ink)}
       <li><i></i>Garantía oficial</li>
       <li><i></i>Equipos nuevos y sellados</li>
       <li><i></i>Envíos a todo el país, a domicilio o a sucursal</li>
-      <li><i></i>Precio mayorista en celulares desde 3 unidades</li>
+      <li><i></i>Precio mayorista en celulares desde 5 unidades, combinables entre modelos</li>
     </ul>
   </section>
 
@@ -303,6 +305,7 @@ const CFG={
   // tablets: [hasta U$, recargo minorista, recargo mayorista]
   tablets:[[150,40,25],[300,50,30],[500,60,30],[800,70,35],[1300,75,45],[2000,95,55],[3000,110,65]],
   minimoMayorista:3,
+  minimoCelulares:5,   // mayorista en celulares (combinables entre modelos)
   // perfumes: [hasta U$, recargo]
   // menos de U$10 +12 · hasta U$20 +15 · U$21-69 +18 · U$70-130 +20 · más de U$130 +25
   perfumes:[[9.99,12],[20,15],[69.99,18],[130,20],[99999,25]],
@@ -310,7 +313,7 @@ const CFG={
 };
 const MAS={id:"mas",label:"Más productos",terms:"Trabajamos estas líneas con lista de precios aparte. Escribinos y te la enviamos."};
 let CATS=[MAS];
-const fillTerms=t=>t.replace("{minMay}",CFG.minimoMayorista).replace("{minPerf}",CFG.minimoPerfumes);
+const fillTerms=t=>t.replace("{minCel}",CFG.minimoCelulares).replace("{minMay}",CFG.minimoMayorista).replace("{minPerf}",CFG.minimoPerfumes);
 const OTHER=[
   ["Cámaras y lentes","Canon, Nikon, Sony, Panasonic, Sigma y Tamron."],
   ["Cosmética capilar Karseell","Línea completa de tratamiento capilar."]
@@ -377,7 +380,7 @@ function render(){
   $("#lines").hidden=!isMas; $("#grid").hidden=isMas; $("#tools").hidden=isMas||!!state.q;
   const cat=CATS.find(c=>c.id===state.cat);
   {const bk=(state.q?"":state.cat);const lb=$("#lbanner");if(lb.dataset.k!==bk){lb.dataset.k=bk;lb.innerHTML=(!state.q&&cat&&cat.banner&&cat.banner.video)?`<div class="team vban"><button type="button" class="reel" data-video="${cat.banner.video}" data-poster="${cat.banner.poster}" aria-label="Ver video"><img src="${cat.banner.poster}" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span><span class="lbl">Ver video</span></button><div class="team-txt"><h2>${esc(cat.banner.t)}</h2><p>${esc(cat.banner.d)}</p></div></div>`:(!state.q&&cat&&cat.banner&&cat.banner.imgs)?`<figure class="lbanner full"><div class="slides">${cat.banner.imgs.map((u,i)=>`<div class="slide${i?"":" on"}"><img class="bg" src="${u}" alt="" aria-hidden="true"><img class="fg" src="${u}" alt="${esc(cat.banner.t)}"></div>`).join("")}<span class="dots">${cat.banner.imgs.map((u,i)=>`<i${i?"":' class="on"'}></i>`).join("")}</span></div><div><b>${esc(cat.banner.t)}</b><span>${esc(cat.banner.d)}</span></div></figure>`:(!state.q&&cat&&cat.banner)?`<figure class="lbanner${cat.banner.full?" full":""}"><img src="${cat.banner.img}" alt="${esc(cat.banner.t)}"${cat.banner.pos?` style="object-position:${cat.banner.pos}"`:""}><div><b>${esc(cat.banner.t)}</b><span>${esc(cat.banner.d)}</span></div></figure>`:"";rotateSlides()}}
-  $("#terms").innerHTML=!cat?"":state.q?`Resultados en todas las categorías. Celulares con precio mayorista desde ${CFG.minimoMayorista} unidades; perfumes con compra mínima de ${CFG.minimoPerfumes} unidades.`:fillTerms(cat.terms);
+  $("#terms").innerHTML=!cat?"":state.q?`Resultados en todas las categorías. Celulares con precio mayorista desde ${CFG.minimoCelulares} unidades; perfumes con compra mínima de ${CFG.minimoPerfumes} unidades.`:fillTerms(cat.terms);
   if(isMas){$("#count").textContent="";$("#more").hidden=true;return}
   const subs=[...new Set(ALL.filter(p=>p.cat===state.cat).map(p=>p.sub))];
   $("#chips").innerHTML=[["","Todos"],...subs.map(s=>[s,s])].map(([v,l])=>`<button class="chip" data-sub="${esc(v)}" aria-pressed="${state.sub===v}">${esc(l)}</button>`).join("");
@@ -414,17 +417,21 @@ const cq=k=>(CART.find(i=>i.k===k)||{q:0}).q;
 function addBtn(p){const q=cq(p.k);return `<button type="button" class="add${q?" in":""}" data-k="${esc(p.k)}">${q?`✓ En el pedido (${q})`:`${CART_SVG}Agregar al pedido`}</button>`}
 function setQ(k,q){const i=CART.find(x=>x.k===k);if(q<=0){CART=CART.filter(x=>x.k!==k)}else if(i){i.q=q}else{CART.push({k,q})}saveCart();updCart();
   document.querySelectorAll(".add").forEach(b=>{if(b.dataset.k===k){const p=BYK.get(k);b.outerHTML=addBtn(p)}})}
-function cartTotal(){return CART.reduce((t,i)=>t+price(BYK.get(i.k)).min*i.q,0)}
+const celQ=()=>CART.reduce((t,i)=>t+(BYK.get(i.k).cat==="celulares"?i.q:0),0);
+const isMay=p=>p.cat==="celulares"&&price(p).may!==undefined&&celQ()>=CFG.minimoCelulares;
+const unit=p=>isMay(p)?price(p).may:price(p).min;
+function cartTotal(){return CART.reduce((t,i)=>t+unit(BYK.get(i.k))*i.q,0)}
+function celNote(){const n=celQ();if(!n) return "";return n>=CFG.minimoCelulares?`<p class="cmay ok">✅ Precio mayorista aplicado a los celulares (${n} unidades).</p>`:`<p class="cmay">📱 Llevando ${CFG.minimoCelulares} celulares o más (combinables entre modelos) se aplica el precio mayorista. Te ${CFG.minimoCelulares-n===1?"falta 1":"faltan "+(CFG.minimoCelulares-n)}.</p>`}
 function updCart(){const n=CART.reduce((t,i)=>t+i.q,0);$("#cartbar").hidden=!n;$("#cart-n").textContent=n;$("#cart-t").textContent=n?fmt(cartTotal()):"";if(!$("#cart").hidden) renderCart()}
-function cartMsg(){const L=CART.map(i=>{const p=BYK.get(i.k),u=price(p).min;return `• ${i.q} x ${p.name}${p.color?` (${p.color})`:""}${p.cod?` · Cód. ${p.cod}`:""} – ${fmt(u)} c/u`});
+function cartMsg(){const L=CART.map(i=>{const p=BYK.get(i.k),u=unit(p);return `• ${i.q} x ${p.name}${p.color?` (${p.color})`:""}${p.cod?` · Cód. ${p.cod}`:""} – ${fmt(u)} c/u${isMay(p)?" (mayorista)":""}`});
   return `Hola! Quiero hacer este pedido desde la página:\n\n${L.join("\n")}\n\nTotal estimado: ${fmt(cartTotal())}\n(Precios del ${CFG.actualizado||""}, a confirmar stock y precio final)`}
 function renderCart(){
   if(!CART.length){$("#cart-list").innerHTML='<p class="cempty">Tu pedido está vacío. Tocá "Agregar al pedido" en los productos que quieras.</p>';$("#cart-foot").innerHTML="";return}
-  $("#cart-list").innerHTML=CART.map(i=>{const p=BYK.get(i.k),u=price(p).min,x=(p.ix%10)*100/9,y=Math.floor(p.ix/10)*100/9;
-    return `<div class="citem"><span class="th" style="background-image:url(${p.img});background-position:${x}% ${y}%"></span><div><b>${esc(p.name)}</b>${p.color?`<small>${esc(p.color)}</small>`:""}<small>${fmt(u)} c/u · ${fmt(u*i.q)}</small></div>
+  $("#cart-list").innerHTML=CART.map(i=>{const p=BYK.get(i.k),u=unit(p),x=(p.ix%10)*100/9,y=Math.floor(p.ix/10)*100/9;
+    return `<div class="citem"><span class="th" style="background-image:url(${p.img});background-position:${x}% ${y}%"></span><div><b>${esc(p.name)}</b>${p.color?`<small>${esc(p.color)}</small>`:""}<small>${fmt(u)} c/u${isMay(p)?" (mayorista)":""} · ${fmt(u*i.q)}</small></div>
     <div class="qty"><button type="button" data-k="${esc(i.k)}" data-d="-1" aria-label="Quitar uno">−</button><span>${i.q}</span><button type="button" data-k="${esc(i.k)}" data-d="1" aria-label="Agregar uno">+</button></div></div>`}).join("");
-  $("#cart-foot").innerHTML=`<div class="ctotal"><span>Total estimado</span><span>${fmt(cartTotal())}</span></div>
-    <p class="cnote">Precios minoristas en pesos, actualizados al ${esc(CFG.actualizado||"")}. Si tu pedido alcanza el mínimo mayorista, te confirmamos ese precio por WhatsApp.</p>
+  $("#cart-foot").innerHTML=`${celNote()}<div class="ctotal"><span>Total estimado</span><span>${fmt(cartTotal())}</span></div>
+    <p class="cnote">Precios en pesos, actualizados al ${esc(CFG.actualizado||"")}. En otras categorías con precio mayorista, si llegás al mínimo te confirmamos ese precio por WhatsApp.</p>
     <button type="button" class="btn wa" id="cart-send">${WA_SVG}Enviar pedido por WhatsApp</button>
     <button type="button" class="clear" id="cart-clear">Vaciar pedido</button>`}
 function openCart(){renderCart();$("#cart").hidden=false;$("#cart-x").focus()}
