@@ -296,6 +296,7 @@ const $=s=>document.querySelector(s);
 const fmt=n=>"$ "+Math.round(n).toLocaleString("es-AR");
 function tier(t,u){for(const r of t) if(u<=r[0]) return r; return t[t.length-1]}
 function price(p){
+  if(p.pricing==="ars") return {min:p.v};
   if(p.pricing==="eq") return {min:p.v*CFG.dolar};
   if(p.pricing==="eqm") return {min:p.v[0]*CFG.dolar,may:p.v[1]*CFG.dolar};
   const T={cel:CFG.celulares,celdu:CFG.celularesDU,tab:CFG.tablets}[p.pricing];
