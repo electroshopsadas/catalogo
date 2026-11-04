@@ -185,13 +185,35 @@ button.ask{background:none;cursor:pointer;width:100%}
 .lbanner .dots{margin:0;opacity:1;font-size:0;position:absolute;right:10px;top:10px;z-index:2;display:flex;gap:5px}
 .lbanner .dots i{display:block;width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5)}
 .lbanner .dots i.on{background:#fff}
+/* carrito */
+.add{margin-top:8px;display:flex;justify-content:center;align-items:center;gap:6px;font:700 13px var(--f-body);padding:8px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);cursor:pointer;width:100%}
+.add.in{background:var(--accent-soft);color:var(--ink);border-color:var(--accent)}
+.add svg,.cartbar svg{width:15px;height:15px}
+.body .ask{margin-top:6px}
+.cartbar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:15;display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;border:0;background:var(--accent);color:var(--accent-ink);font:700 15px var(--f-body);box-shadow:0 8px 24px rgba(0,0,0,.3);cursor:pointer;white-space:nowrap;max-width:calc(100% - 32px)}
+.cartbar b{font-variant-numeric:tabular-nums}
+.cartbar .n{background:var(--accent-ink);color:var(--accent);border-radius:999px;min-width:22px;height:22px;display:grid;place-items:center;font-size:12.5px;padding:0 6px}
+.cart-box{max-width:520px;max-height:calc(100vh - 32px);overflow:auto}
+.citem{display:grid;grid-template-columns:52px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.citem .th{width:52px;height:52px;border-radius:8px;background-color:#fff;background-repeat:no-repeat;background-size:1000% 1000%}
+.citem b{display:block;font-size:14px;line-height:1.25}
+.citem small{display:block;color:var(--muted);font-size:12.5px;font-variant-numeric:tabular-nums}
+.qty{display:flex;align-items:center;gap:6px}
+.qty button{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:17px;line-height:1;cursor:pointer}
+.qty span{min-width:20px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.ctotal{display:flex;justify-content:space-between;align-items:baseline;font-weight:800;font-size:18px;padding-top:6px}
+.cnote{font-size:12.5px;color:var(--muted);margin:0}
+.cart-box .btn.wa{justify-content:center;width:100%;font-size:15px;padding:12px}
+.clear{border:0;background:none;color:var(--muted);text-decoration:underline;font:500 13px var(--f-body);cursor:pointer;justify-self:center}
+.cempty{color:var(--muted);padding:12px 0}
+@media (max-width:440px){.add,.body .ask{font-size:12.5px;padding:7px 4px}}
 /* other lines */
 .lines{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;padding-bottom:28px}
 .line{display:flex;flex-direction:column;gap:6px;padding:16px;border-radius:12px;background:var(--surface);border:1px solid var(--line)}
 .line h3{margin:0;font-size:16px}
 .line p{margin:0;font-size:13.5px;color:var(--muted);flex:1}
 .line .ask{align-self:flex-start;padding:7px 12px}
-footer{border-top:1px solid var(--line);background:var(--surface)}
+footer{border-top:1px solid var(--line);background:var(--surface);padding-bottom:70px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;padding-block:22px;font-size:13.5px;color:var(--muted)}
 footer b{color:var(--ink)}
 @media (prefers-reduced-motion:no-preference){.card{transition:border-color .15s}.card:hover{border-color:var(--accent)}}
@@ -257,6 +279,8 @@ footer b{color:var(--ink)}
 <div class="pick" id="pick" hidden role="dialog" aria-modal="true" aria-labelledby="pick-t"><div class="pick-box"><div class="pick-head"><div><h2 id="pick-t">¿Con quién querés hablar?</h2><p id="pick-p"></p></div><button type="button" class="pick-x" id="pick-x" aria-label="Cerrar">×</button></div><div id="pick-list"></div></div></div>
 
 <div class="vbox" id="vbox" hidden role="dialog" aria-modal="true" aria-label="Video: quiénes somos"><div class="vbox-in"><div class="vbox-bar"><a href="https://www.instagram.com/electroshop.sadas/" target="_blank" rel="noopener">Seguinos en Instagram</a><button type="button" class="pick-x" id="vbox-x" aria-label="Cerrar">×</button></div><div id="vbox-v"></div></div></div>
+<button type="button" class="cartbar" id="cartbar" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2.5 3h2.6l2.3 11.2a1.6 1.6 0 0 0 1.6 1.3h8.4a1.6 1.6 0 0 0 1.6-1.2L21 7H6"/></svg>Mi pedido <span class="n" id="cart-n">0</span><b id="cart-t"></b></button>
+<div class="pick" id="cart" hidden role="dialog" aria-modal="true" aria-labelledby="cart-h"><div class="pick-box cart-box"><div class="pick-head"><div><h2 id="cart-h">Mi pedido</h2><p>Armá tu pedido y envialo por WhatsApp. Te confirmamos stock y precio final.</p></div><button type="button" class="pick-x" id="cart-x" aria-label="Cerrar">×</button></div><div id="cart-list"></div><div id="cart-foot"></div></div></div>
 <footer><div class="wrap">
   <span><b>Electro Shop Sadas</b> · Productos originales con garantía oficial</span>
   <span>Envíos a todo el país</span>
@@ -333,6 +357,7 @@ function card(p){
     ${p.note?`<span class="note">${esc(p.note)}</span>`:""}
     <div class="price">${priceHtml}</div>
     ${p.cod?`<span class="cod">Cód. ${esc(p.cod)}</span>`:""}
+    ${addBtn(p)}
     <button type="button" class="ask" data-msg="${esc(msg)}">${WA_SVG}Consultar</button></div></article>`;
 }
 function list(){
@@ -380,6 +405,37 @@ const closeV=()=>{$("#vbox").hidden=true;$("#vbox-v").innerHTML=""};
 $("#vbox-x").addEventListener("click",closeV);
 $("#vbox").addEventListener("click",e=>{if(e.target.id==="vbox") closeV()});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#vbox").hidden) closeV()});
+// ===== Carrito: el cliente arma el pedido y lo manda por WhatsApp =====
+let BYK=new Map(),CART=[];
+const CART_SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2.5 3h2.6l2.3 11.2a1.6 1.6 0 0 0 1.6 1.3h8.4a1.6 1.6 0 0 0 1.6-1.2L21 7H6"/></svg>';
+function loadCart(){try{const j=JSON.parse(localStorage.getItem("es_cart")||"[]");CART=j.filter(i=>BYK.has(i.k)&&i.q>0)}catch(e){CART=[]}updCart()}
+function saveCart(){try{localStorage.setItem("es_cart",JSON.stringify(CART))}catch(e){}}
+const cq=k=>(CART.find(i=>i.k===k)||{q:0}).q;
+function addBtn(p){const q=cq(p.k);return `<button type="button" class="add${q?" in":""}" data-k="${esc(p.k)}">${q?`✓ En el pedido (${q})`:`${CART_SVG}Agregar al pedido`}</button>`}
+function setQ(k,q){const i=CART.find(x=>x.k===k);if(q<=0){CART=CART.filter(x=>x.k!==k)}else if(i){i.q=q}else{CART.push({k,q})}saveCart();updCart();
+  document.querySelectorAll(".add").forEach(b=>{if(b.dataset.k===k){const p=BYK.get(k);b.outerHTML=addBtn(p)}})}
+function cartTotal(){return CART.reduce((t,i)=>t+price(BYK.get(i.k)).min*i.q,0)}
+function updCart(){const n=CART.reduce((t,i)=>t+i.q,0);$("#cartbar").hidden=!n;$("#cart-n").textContent=n;$("#cart-t").textContent=n?fmt(cartTotal()):"";if(!$("#cart").hidden) renderCart()}
+function cartMsg(){const L=CART.map(i=>{const p=BYK.get(i.k),u=price(p).min;return `• ${i.q} x ${p.name}${p.color?` (${p.color})`:""}${p.cod?` · Cód. ${p.cod}`:""} – ${fmt(u)} c/u`});
+  return `Hola! Quiero hacer este pedido desde la página:\n\n${L.join("\n")}\n\nTotal estimado: ${fmt(cartTotal())}\n(Precios del ${CFG.actualizado||""}, a confirmar stock y precio final)`}
+function renderCart(){
+  if(!CART.length){$("#cart-list").innerHTML='<p class="cempty">Tu pedido está vacío. Tocá "Agregar al pedido" en los productos que quieras.</p>';$("#cart-foot").innerHTML="";return}
+  $("#cart-list").innerHTML=CART.map(i=>{const p=BYK.get(i.k),u=price(p).min,x=(p.ix%10)*100/9,y=Math.floor(p.ix/10)*100/9;
+    return `<div class="citem"><span class="th" style="background-image:url(${p.img});background-position:${x}% ${y}%"></span><div><b>${esc(p.name)}</b>${p.color?`<small>${esc(p.color)}</small>`:""}<small>${fmt(u)} c/u · ${fmt(u*i.q)}</small></div>
+    <div class="qty"><button type="button" data-k="${esc(i.k)}" data-d="-1" aria-label="Quitar uno">−</button><span>${i.q}</span><button type="button" data-k="${esc(i.k)}" data-d="1" aria-label="Agregar uno">+</button></div></div>`}).join("");
+  $("#cart-foot").innerHTML=`<div class="ctotal"><span>Total estimado</span><span>${fmt(cartTotal())}</span></div>
+    <p class="cnote">Precios minoristas en pesos, actualizados al ${esc(CFG.actualizado||"")}. Si tu pedido alcanza el mínimo mayorista, te confirmamos ese precio por WhatsApp.</p>
+    <button type="button" class="btn wa" id="cart-send">${WA_SVG}Enviar pedido por WhatsApp</button>
+    <button type="button" class="clear" id="cart-clear">Vaciar pedido</button>`}
+function openCart(){renderCart();$("#cart").hidden=false;$("#cart-x").focus()}
+$("#cartbar").addEventListener("click",openCart);
+$("#cart-x").addEventListener("click",()=>{$("#cart").hidden=true});
+$("#cart").addEventListener("click",e=>{if(e.target.id==="cart"){$("#cart").hidden=true;return}
+  const b=e.target.closest(".qty button");if(b){setQ(b.dataset.k,cq(b.dataset.k)+Number(b.dataset.d));return}
+  if(e.target.closest("#cart-send")){const m=cartMsg();$("#cart").hidden=true;openPick(m);return}
+  if(e.target.closest("#cart-clear")){CART=[];saveCart();updCart();document.querySelectorAll(".add.in").forEach(x=>{x.outerHTML=addBtn(BYK.get(x.dataset.k))});renderCart()}});
+document.addEventListener("click",e=>{const b=e.target.closest(".add[data-k]");if(b){const k=b.dataset.k;if(!cq(k)) setQ(k,1); else openCart()}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#cart").hidden) $("#cart").hidden=true});
 $("#wa").addEventListener("click",()=>openPick(""));
 document.addEventListener("click",e=>{const b=e.target.closest("button.ask[data-msg]");if(b) openPick(b.dataset.msg)});
 $("#pick-x").addEventListener("click",closePick);
@@ -399,13 +455,14 @@ let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{
 
 // Cotización USDT: la actualiza GitHub a las 9:00 y 21:00 (sitio/cotizacion.json). Si no carga, queda la de CFG.
 fetch("cotizacion.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(j=>{
-  if(j&&j.dolar>500&&j.dolar<100000){CFG.dolar=j.dolar;CFG.actualizado=j.actualizado;$("#upd").textContent=j.actualizado;if(ALL.length) render();}
+  if(j&&j.dolar>500&&j.dolar<100000){CFG.dolar=j.dolar;CFG.actualizado=j.actualizado;$("#upd").textContent=j.actualizado;if(ALL.length){render();updCart()}}
 }).catch(()=>{});
 fetch("productos.json",{cache:"no-cache"}).then(r=>r.json()).then(data=>{
   CATS=[...data.listas,MAS]; data.listas.forEach(l=>{if(l.promo) PROMO.add(l.id)});
   if(!CATS.some(c=>c.id===state.cat)) state.cat=CATS[0].id;
   ALL=data.productos.map(r=>{const p={cat:r[0],sub:r[1],name:r[2],detail:r[3],color:r[4],note:r[5],cod:r[6],pricing:r[7],img:r[8],ix:r[9],v:r[10]};
-    p._s=norm([p.sub,p.name,p.detail,p.color,p.cod,p.cat].join(" "));return p});
+    p._s=norm([p.sub,p.name,p.detail,p.color,p.cod,p.cat].join(" "));p.k=[p.cat,p.cod,p.name,p.color].join("|");return p});
+  BYK=new Map(ALL.map(p=>[p.k,p]));loadCart();
   const n=id=>id==="mas"?OTHER.length:ALL.filter(p=>p.cat===id).length;
   $("#tabs").innerHTML=CATS.map(c=>`<button class="tab" role="tab" data-id="${c.id}">${c.label}<small>${n(c.id)}</small></button>`).join("");
   const h=(location.hash||"").slice(1); if(CATS.some(c=>c.id===h)) state.cat=h;
