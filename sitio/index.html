@@ -481,7 +481,7 @@ fetch("cotizacion.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(j=>
 fetch("productos.json",{cache:"no-cache"}).then(r=>r.json()).then(data=>{
   OF=data.ofertas||null;CATS=[...data.listas,MAS]; data.listas.forEach(l=>{if(l.promo) PROMO.add(l.id)});
   if(!CATS.some(c=>c.id===state.cat)) state.cat=CATS[0].id;
-  ALL=data.productos.map(r=>{const p={cat:r[0],sub:r[1],name:r[2],detail:r[3],color:r[4],note:r[5],cod:r[6],pricing:r[7],img:r[8],ix:r[9],v:r[10]};if(ofL(r[0])){const v=OF.items[r[6]]||OF.items[r[2]]; if(v) p.of=v}
+  ALL=data.productos.map(r=>{const p={cat:r[0],sub:r[1],name:r[2],detail:r[3],color:r[4],note:r[5],cod:r[6],pricing:r[7],img:r[8],ix:r[9],v:r[10]};if(ofL(r[0])){const v=OF.items[r[6]]||OF.items[r[2]+" | "+r[3]]||OF.items[r[2]]; if(v) p.of=v}
     p._s=norm([p.sub,p.name,p.detail,p.color,p.cod,p.cat].join(" "));p.k=[p.cat,p.cod,p.name,p.color].join("|");return p});
   BYK=new Map(ALL.map(p=>[p.k,p]));loadCart();
   const n=id=>id==="mas"?OTHER.length:ALL.filter(p=>p.cat===id).length;
