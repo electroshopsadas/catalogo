@@ -351,6 +351,7 @@ function closePick(){$("#pick").hidden=true}
 const PROMO=new Set();
 let OF=null;
 const ofOn=()=>!!OF&&Date.now()<Date.parse(OF.hasta);
+const ofL=id=>!!OF&&!!OF.items&&[].concat(OF.lista).includes(id);
 let ALL=[],state={cat:"jbl",sub:"",q:"",sort:"def",shown:48};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const norm=s=>s.normalize("NFD").replace(/\p{M}/gu,"").toLowerCase();
@@ -392,7 +393,7 @@ function render(){
   $("#lines").hidden=!isMas; $("#grid").hidden=isMas; $("#tools").hidden=isMas||!!state.q;
   const cat=CATS.find(c=>c.id===state.cat);
   {const bk=(state.q?"":state.cat);const lb=$("#lbanner");if(lb.dataset.k!==bk){lb.dataset.k=bk;lb.innerHTML=(!state.q&&cat&&cat.banner&&(cat.banner.video||cat.banner.videos))?`<div class="team vban${cat.banner.videos?" multi":""}">${(cat.banner.videos||[{video:cat.banner.video,poster:cat.banner.poster,label:"Ver video"}]).map(v=>`<button type="button" class="reel" data-video="${v.video}" data-poster="${v.poster}" aria-label="Ver video: ${esc(v.label)}"><img src="${v.poster}" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span><span class="lbl">${esc(v.label)}</span></button>`).join("")}<div class="team-txt"><h2>${esc(cat.banner.t)}</h2><p>${esc(cat.banner.d)}</p></div></div>`:(!state.q&&cat&&cat.banner&&cat.banner.imgs)?`<figure class="lbanner full"><div class="slides">${cat.banner.imgs.map((u,i)=>`<div class="slide${i?"":" on"}"><img class="bg" src="${u}" alt="" aria-hidden="true"><img class="fg" src="${u}" alt="${esc(cat.banner.t)}"></div>`).join("")}<span class="dots">${cat.banner.imgs.map((u,i)=>`<i${i?"":' class="on"'}></i>`).join("")}</span></div><div><b>${esc(cat.banner.t)}</b><span>${esc(cat.banner.d)}</span></div></figure>`:(!state.q&&cat&&cat.banner)?`<figure class="lbanner${cat.banner.full?" full":""}"><img src="${cat.banner.img}" alt="${esc(cat.banner.t)}"${cat.banner.pos?` style="object-position:${cat.banner.pos}"`:""}><div><b>${esc(cat.banner.t)}</b><span>${esc(cat.banner.d)}</span></div></figure>`:"";rotateSlides()}}
-  $("#bf").innerHTML=(ofOn()&&!isMas&&(state.q?list().some(p=>price(p).old):state.cat===OF.lista))?`<div class="bfbar">🔥 <span><b>${esc(OF.titulo)}</b> · Precios con descuento válidos hasta ${esc(OF.hastaTxt)} inclusive o hasta agotar stock.</span></div>`:"";
+  $("#bf").innerHTML=(ofOn()&&!isMas&&(state.q?list().some(p=>price(p).old):ofL(state.cat)))?`<div class="bfbar">🔥 <span><b>${esc(OF.titulo)}</b> · Precios con descuento válidos hasta ${esc(OF.hastaTxt)} inclusive o hasta agotar stock.</span></div>`:"";
   $("#terms").innerHTML=(!cat?"":state.q?`Resultados en todas las categorías. Celulares con precio mayorista desde ${CFG.minimoCelulares} unidades; perfumes con compra mínima de ${CFG.minimoPerfumes} unidades.`:fillTerms(cat.terms));
   if(isMas){$("#count").textContent="";$("#more").hidden=true;return}
   const subs=[...new Set(ALL.filter(p=>p.cat===state.cat).map(p=>p.sub))];
@@ -480,11 +481,11 @@ fetch("cotizacion.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(j=>
 fetch("productos.json",{cache:"no-cache"}).then(r=>r.json()).then(data=>{
   OF=data.ofertas||null;CATS=[...data.listas,MAS]; data.listas.forEach(l=>{if(l.promo) PROMO.add(l.id)});
   if(!CATS.some(c=>c.id===state.cat)) state.cat=CATS[0].id;
-  ALL=data.productos.map(r=>{const p={cat:r[0],sub:r[1],name:r[2],detail:r[3],color:r[4],note:r[5],cod:r[6],pricing:r[7],img:r[8],ix:r[9],v:r[10]};if(OF&&OF.items&&r[0]===OF.lista&&OF.items[r[6]]) p.of=OF.items[r[6]];
+  ALL=data.productos.map(r=>{const p={cat:r[0],sub:r[1],name:r[2],detail:r[3],color:r[4],note:r[5],cod:r[6],pricing:r[7],img:r[8],ix:r[9],v:r[10]};if(ofL(r[0])){const v=OF.items[r[6]]||OF.items[r[2]]; if(v) p.of=v}
     p._s=norm([p.sub,p.name,p.detail,p.color,p.cod,p.cat].join(" "));p.k=[p.cat,p.cod,p.name,p.color].join("|");return p});
   BYK=new Map(ALL.map(p=>[p.k,p]));loadCart();
   const n=id=>id==="mas"?OTHER.length:ALL.filter(p=>p.cat===id).length;
-  $("#tabs").innerHTML=CATS.map(c=>`<button class="tab" role="tab" data-id="${c.id}">${c.label}${ofOn()&&OF.lista===c.id?'<span class="bft">BLACK FRIDAY</span>':""}<small>${n(c.id)}</small></button>`).join("");
+  $("#tabs").innerHTML=CATS.map(c=>`<button class="tab" role="tab" data-id="${c.id}">${c.label}${ofOn()&&ofL(c.id)?'<span class="bft">BLACK FRIDAY</span>':""}<small>${n(c.id)}</small></button>`).join("");
   const h=(location.hash||"").slice(1); if(CATS.some(c=>c.id===h)) state.cat=h;
   render(); arrows();
 }).catch(()=>{$("#grid").innerHTML='<p class="empty">No se pudo cargar el catálogo. Recargá la página.</p>'});
