@@ -107,6 +107,12 @@ select{font:500 13.5px var(--f-body);padding:7px 10px;border-radius:8px;border:1
 .note{align-self:flex-start;font-size:11.5px;font-weight:600;color:var(--promo)}
 .price{margin-top:auto;padding-top:8px;display:grid;gap:2px}
 .price .lab{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.price s{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.price .lab.bf{color:var(--promo)}
+.ph .tag.off{left:auto;right:8px;background:#e11d2a;color:#fff;font-size:12px}
+.bfbar{display:flex;gap:10px;align-items:center;padding:12px 14px;border-radius:12px;background:linear-gradient(90deg,#000,#3a0b10);border:1px solid #e11d2a;color:#fff;margin-bottom:8px;font-size:14px}
+.bfbar b{font-weight:900;letter-spacing:.08em;color:#ff4d5a}
+.tab .bft{display:inline-block;margin-left:6px;font:800 9.5px var(--f-body);letter-spacing:.06em;background:#e11d2a;color:#fff;padding:2px 5px;border-radius:4px;vertical-align:middle}
 .price .big{font-weight:800;font-size:19px;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
 .price .may{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
 .price .may b{color:var(--ink);font-weight:700}
@@ -273,6 +279,7 @@ footer b{color:var(--ink)}
       <label for="sort" class="count">Ordenar</label>
       <select id="sort"><option value="def">Destacados</option><option value="asc">Menor precio</option><option value="desc">Mayor precio</option><option value="az">Nombre A–Z</option></select>
     </div>
+    <div id="bf"></div>
     <div class="terms" id="terms"></div>
     <div class="count" id="count" aria-live="polite"></div>
     <div class="grid" id="grid"></div>
@@ -326,7 +333,7 @@ const fmt=n=>"$ "+Math.round(n).toLocaleString("es-AR");
 function tier(t,u){for(const r of t) if(u<=r[0]) return r; return t[t.length-1]}
 function price(p){
   if(p.pricing==="ars") return {min:p.v};
-  if(p.pricing==="eq") return {min:p.v*CFG.dolar};
+  if(p.pricing==="eq"){if(p.of&&ofOn()) return {min:p.of*CFG.dolar,old:p.v*CFG.dolar,off:Math.round((1-p.of/p.v)*100)}; return {min:p.v*CFG.dolar}}
   if(p.pricing==="eqm") return {min:p.v[0]*CFG.dolar,may:p.v[1]*CFG.dolar};
   const T={cel:CFG.celulares,celdu:CFG.celularesDU,tab:CFG.tablets}[p.pricing];
   if(T){const r=tier(T,p.v);return {min:(p.v+r[1])*CFG.dolar,may:(p.v+r[2])*CFG.dolar}}
@@ -342,6 +349,8 @@ function openPick(text){
 }
 function closePick(){$("#pick").hidden=true}
 const PROMO=new Set();
+let OF=null;
+const ofOn=()=>!!OF&&Date.now()<Date.parse(OF.hasta);
 let ALL=[],state={cat:"jbl",sub:"",q:"",sort:"def",shown:48};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const norm=s=>s.normalize("NFD").replace(/\p{M}/gu,"").toLowerCase();
@@ -353,9 +362,10 @@ function card(p){
   const msg=`Hola! Quiero consultar por: ${title}${p.cod?` · Cód. ${p.cod}`:""}`;
   let priceHtml;
   if(price(p).may!==undefined) priceHtml=`<span class="lab">Minorista</span><span class="big">${fmt(pr.min)}</span><span class="may">Mayorista <b>${fmt(pr.may)}</b></span>`;
+  else if(pr.old) priceHtml=`<span class="lab bf">${esc(OF.titulo)} -${pr.off}%</span><s>Antes ${fmt(pr.old)}</s><span class="big">${fmt(pr.min)}</span>`;
   else priceHtml=`<span class="lab">${promo?"Precio promo":"Precio"}</span><span class="big">${fmt(pr.min)}</span>`;
   return `<article class="card"><div class="ph" role="img" aria-label="${esc(p.name)}" style="background-image:url(${p.img});background-position:${x}% ${y}%">
-    <span class="tag">${esc(p.sub)}</span>${promo?'<span class="tag promo">Promo</span>':""}</div>
+    <span class="tag">${esc(p.sub)}</span>${pr.old?`<span class="tag off">-${pr.off}%</span>`:promo?'<span class="tag promo">Promo</span>':""}</div>
     <div class="body"><div class="name">${esc(p.name)}</div>
     ${p.detail?`<div class="det">${esc(p.detail)}</div>`:""}
     ${p.color?`<div class="det">Color: ${esc(p.color)}</div>`:""}
@@ -382,7 +392,8 @@ function render(){
   $("#lines").hidden=!isMas; $("#grid").hidden=isMas; $("#tools").hidden=isMas||!!state.q;
   const cat=CATS.find(c=>c.id===state.cat);
   {const bk=(state.q?"":state.cat);const lb=$("#lbanner");if(lb.dataset.k!==bk){lb.dataset.k=bk;lb.innerHTML=(!state.q&&cat&&cat.banner&&(cat.banner.video||cat.banner.videos))?`<div class="team vban${cat.banner.videos?" multi":""}">${(cat.banner.videos||[{video:cat.banner.video,poster:cat.banner.poster,label:"Ver video"}]).map(v=>`<button type="button" class="reel" data-video="${v.video}" data-poster="${v.poster}" aria-label="Ver video: ${esc(v.label)}"><img src="${v.poster}" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span><span class="lbl">${esc(v.label)}</span></button>`).join("")}<div class="team-txt"><h2>${esc(cat.banner.t)}</h2><p>${esc(cat.banner.d)}</p></div></div>`:(!state.q&&cat&&cat.banner&&cat.banner.imgs)?`<figure class="lbanner full"><div class="slides">${cat.banner.imgs.map((u,i)=>`<div class="slide${i?"":" on"}"><img class="bg" src="${u}" alt="" aria-hidden="true"><img class="fg" src="${u}" alt="${esc(cat.banner.t)}"></div>`).join("")}<span class="dots">${cat.banner.imgs.map((u,i)=>`<i${i?"":' class="on"'}></i>`).join("")}</span></div><div><b>${esc(cat.banner.t)}</b><span>${esc(cat.banner.d)}</span></div></figure>`:(!state.q&&cat&&cat.banner)?`<figure class="lbanner${cat.banner.full?" full":""}"><img src="${cat.banner.img}" alt="${esc(cat.banner.t)}"${cat.banner.pos?` style="object-position:${cat.banner.pos}"`:""}><div><b>${esc(cat.banner.t)}</b><span>${esc(cat.banner.d)}</span></div></figure>`:"";rotateSlides()}}
-  $("#terms").innerHTML=!cat?"":state.q?`Resultados en todas las categorías. Celulares con precio mayorista desde ${CFG.minimoCelulares} unidades; perfumes con compra mínima de ${CFG.minimoPerfumes} unidades.`:fillTerms(cat.terms);
+  $("#bf").innerHTML=(ofOn()&&!isMas&&(state.q?list().some(p=>price(p).old):state.cat===OF.lista))?`<div class="bfbar">🔥 <span><b>${esc(OF.titulo)}</b> · Precios con descuento válidos hasta ${esc(OF.hastaTxt)} inclusive o hasta agotar stock.</span></div>`:"";
+  $("#terms").innerHTML=(!cat?"":state.q?`Resultados en todas las categorías. Celulares con precio mayorista desde ${CFG.minimoCelulares} unidades; perfumes con compra mínima de ${CFG.minimoPerfumes} unidades.`:fillTerms(cat.terms));
   if(isMas){$("#count").textContent="";$("#more").hidden=true;return}
   const subs=[...new Set(ALL.filter(p=>p.cat===state.cat).map(p=>p.sub))];
   $("#chips").innerHTML=[["","Todos"],...subs.map(s=>[s,s])].map(([v,l])=>`<button class="chip" data-sub="${esc(v)}" aria-pressed="${state.sub===v}">${esc(l)}</button>`).join("");
@@ -467,13 +478,13 @@ fetch("cotizacion.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(j=>
   if(j&&j.dolar>500&&j.dolar<100000){CFG.dolar=j.dolar;CFG.actualizado=j.actualizado;$("#upd").textContent=j.actualizado;if(ALL.length){render();updCart()}}
 }).catch(()=>{});
 fetch("productos.json",{cache:"no-cache"}).then(r=>r.json()).then(data=>{
-  CATS=[...data.listas,MAS]; data.listas.forEach(l=>{if(l.promo) PROMO.add(l.id)});
+  OF=data.ofertas||null;CATS=[...data.listas,MAS]; data.listas.forEach(l=>{if(l.promo) PROMO.add(l.id)});
   if(!CATS.some(c=>c.id===state.cat)) state.cat=CATS[0].id;
-  ALL=data.productos.map(r=>{const p={cat:r[0],sub:r[1],name:r[2],detail:r[3],color:r[4],note:r[5],cod:r[6],pricing:r[7],img:r[8],ix:r[9],v:r[10]};
+  ALL=data.productos.map(r=>{const p={cat:r[0],sub:r[1],name:r[2],detail:r[3],color:r[4],note:r[5],cod:r[6],pricing:r[7],img:r[8],ix:r[9],v:r[10]};if(OF&&OF.items&&r[0]===OF.lista&&OF.items[r[6]]) p.of=OF.items[r[6]];
     p._s=norm([p.sub,p.name,p.detail,p.color,p.cod,p.cat].join(" "));p.k=[p.cat,p.cod,p.name,p.color].join("|");return p});
   BYK=new Map(ALL.map(p=>[p.k,p]));loadCart();
   const n=id=>id==="mas"?OTHER.length:ALL.filter(p=>p.cat===id).length;
-  $("#tabs").innerHTML=CATS.map(c=>`<button class="tab" role="tab" data-id="${c.id}">${c.label}<small>${n(c.id)}</small></button>`).join("");
+  $("#tabs").innerHTML=CATS.map(c=>`<button class="tab" role="tab" data-id="${c.id}">${c.label}${ofOn()&&OF.lista===c.id?'<span class="bft">BLACK FRIDAY</span>':""}<small>${n(c.id)}</small></button>`).join("");
   const h=(location.hash||"").slice(1); if(CATS.some(c=>c.id===h)) state.cat=h;
   render(); arrows();
 }).catch(()=>{$("#grid").innerHTML='<p class="empty">No se pudo cargar el catálogo. Recargá la página.</p>'});
