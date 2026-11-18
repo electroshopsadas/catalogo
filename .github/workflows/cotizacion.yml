@@ -1,4 +1,4 @@
-  name: Cotización USDT
+name: Cotización USDT
 on:
   schedule:
     - cron: "30 11 * * *"   # ~9:00 Argentina
