@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: "30 11 * * *"   # ~9:00 Argentina
     - cron: "30 15 * * *"   # ~13:00 Argentina
+    - cron: "30 18 * * *"   # ~16:00 Argentina
     - cron: "30 22 * * *"   # ~20:00 Argentina
   workflow_dispatch: {}
 permissions:
@@ -18,4 +19,4 @@ jobs:
           git config user.email "actions@github.com"
           git add sitio/cotizacion.json
           git commit -m "Cotización USDT $(date -u +%F' '%H:%M) UTC" || echo "sin cambios"
-          git push  
+          git push
